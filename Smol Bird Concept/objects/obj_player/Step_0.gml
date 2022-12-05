@@ -2,17 +2,17 @@
 
 // check keys for movement
 if (global.playerControl == true) {
-	moveRight = keyboard_check(vk_right);
-	moveUp = keyboard_check(vk_up);
-	moveLeft = keyboard_check(vk_left);
-	moveDown = keyboard_check(vk_down);
+	moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+	moveLeft = keyboard_check(vk_left)|| keyboard_check(ord("A"));
+	moveDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
 } 
 
 if (global.playerControl == false) {
 	moveRight = 0;
 	moveUp = 0;
 	moveLeft = 0;
-	moveRight = 0;
+	moveDown = 0;
 }
 
 // calculate movement
@@ -34,7 +34,7 @@ if (vx == 0 && vy == 0) {
 // If moving
 if (vx != 0 || vy !=0) {
 	if !collision_point(x+vx, y, obj_par_environment, true, true) {
-	x += vx
+	x += vx;
 	}
 	if !collision_point(x, y+vy, obj_par_environment, true, true) {
 	y += vy;
@@ -69,13 +69,17 @@ x+lookRange, y+lookRange,obj_par_npc,false,true);
 
 if nearbyNPC {
 	// do something
-	show_debug_message("Player found NPC")
+	show_debug_message("Player found NPC");
 }
 if !nearbyNPC {
 	//somthing else
-	show_debug_message("player hasnt found NPC")
+	show_debug_message("player hasnt found NPC");
 }
 
 
 //depthsorting
 depth =-y;
+
+//push
+scr_push();
+
