@@ -1,7 +1,7 @@
 /// @description Player Character Creation
 
 //Variables
-walkSpeed = 24;
+walkSpeed = 16;
 vx = 0;
 vy = 0;
 moveRight = 0;
@@ -15,4 +15,4 @@ lookRange = 30;
 
 
 // Depth sorting
-depth = -y
+depth = -y;
