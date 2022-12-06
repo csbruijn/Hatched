@@ -66,14 +66,21 @@ if (vx>0) {
 nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_par_npc,false,true);
 
-
+//When nearby NPC
 if nearbyNPC {
-	// do something
+	// debug msg
 	show_debug_message("Player found NPC");
+	// Pop up prompt
+	if (npcPrompt == noone || npcPrompt == undefined) {
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-170);
+	}
 }
+
 if !nearbyNPC {
 	//somthing else
 	show_debug_message("player hasnt found NPC");
+	// Get rid of Prompt
+	scr_dismissPrompt(npcPrompt,0);
 }
 
 
