@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description interact
 if (!instance_exists(obj_textbox)) {
 	//Create
 	var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);

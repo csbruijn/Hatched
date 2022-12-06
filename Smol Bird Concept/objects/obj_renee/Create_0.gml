@@ -7,3 +7,7 @@ msg = [
 ["Well, anyway. You wanna earn some money? I've got quite the job for you!", "Renee",  -1],
 ["No", "Player", spr_player_move_right]
 ]
+
+// variables 
+flyBuffet = false
+lookRange = 30
