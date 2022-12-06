@@ -2,14 +2,11 @@
 // You can write your code in this editor
 
 
-// Check for collision with Swarm
-nearbyFlies = collision_rectangle(x-lookRange, y-lookRange,
-x+lookRange, y+lookRange,obj_swarm,false,true);
+if (flyBuffet == true) {
+	show_debug_message("Renee is satisfied with his buffet")
+} 
 
-// trigger flie eating 
-if nearbyFlies {
-	alarm [0] =2
-}
+
 
 
 
