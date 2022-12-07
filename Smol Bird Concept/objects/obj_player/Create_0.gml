@@ -11,7 +11,7 @@ moveDown = 0;
 dir = 3;
 nearbyNPC = noone;
 lookRange = 30;
-
+npcPrompt = noone
 
 
 // Depth sorting

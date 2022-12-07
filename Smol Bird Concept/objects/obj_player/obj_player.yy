@@ -9,7 +9,10 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_player_move_left",
+    "path": "sprites/spr_player_move_left/spr_player_move_left.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

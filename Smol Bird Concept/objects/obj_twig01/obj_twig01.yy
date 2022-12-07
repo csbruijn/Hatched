@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_swarm",
+  "name": "obj_twig01",
   "spriteId": {
-    "name": "spr_swarm",
-    "path": "sprites/spr_swarm/spr_swarm.yy",
+    "name": "spr_twig",
+    "path": "sprites/spr_twig/spr_twig.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,15 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mob",
-    "path": "folders/Objects/Mob.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
 }
