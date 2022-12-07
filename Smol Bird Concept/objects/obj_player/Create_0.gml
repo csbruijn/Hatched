@@ -14,6 +14,9 @@ lookRange = 30;
 npcPrompt = noone;
 itemPrompt = noone;
 inventorySlot01 = noone;
+inventorySlot02 = noone;
+inventorySlot03 = noone;
+inventorySlot04 = noone;
 
 
 // Depth sorting
