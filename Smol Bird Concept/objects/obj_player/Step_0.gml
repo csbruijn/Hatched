@@ -66,6 +66,10 @@ if (vx>0) {
 nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_par_npc,false,true);
 
+// Check for collision with Items
+nearbyItem = collision_rectangle(x-lookRange, y-lookRange,
+x+lookRange, y+lookRange,obj_par_item,false,true);
+
 //When nearby NPC
 if nearbyNPC {
 	// debug msg
@@ -83,10 +87,26 @@ if !nearbyNPC {
 	scr_dismissPrompt(npcPrompt,0);
 }
 
+// when nearby an item 
+if nearbyItem {
+	// DEBUG
+	//show_debug_message("player found an item")
+	// show prompt
+	if (itemPrompt == noone || itemPrompt == undefined) {
+		itemPrompt = scr_showPrompt(nearbyItem,nearbyItem.x,nearbyItem.y-50);
+	}
+	
+}
+
+// when not nearby item
+if !nearbyItem {
+	// dismiss prompt
+	scr_dismissPrompt(itemPrompt,1);
+}
 
 //depthsorting
 depth =-y;
 
-//push
+//push swarm
 scr_push();
 

@@ -11,7 +11,12 @@ moveDown = 0;
 dir = 3;
 nearbyNPC = noone;
 lookRange = 30;
-npcPrompt = noone
+npcPrompt = noone;
+itemPrompt = noone;
+inventorySlot01 = noone;
+inventorySlot02 = noone;
+inventorySlot03 = noone;
+inventorySlot04 = noone;
 
 
 // Depth sorting
