@@ -78,7 +78,7 @@ if nearbyNPC {
 
 if !nearbyNPC {
 	//somthing else
-	show_debug_message("player hasnt found NPC");
+	
 	// Get rid of Prompt
 	scr_dismissPrompt(npcPrompt,0);
 }

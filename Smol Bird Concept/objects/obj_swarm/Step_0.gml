@@ -12,6 +12,7 @@ x+lookRange, y+lookRange,obj_renee,false,true);
 if nearbyFrog {
 	if (dinnerTime == false) {
 		dinnerTime = true;
+		global.playerControl=false; 
 		alarm[0] = 90;
 	}
 		if (obj_swarm.x > obj_renee.x) {
