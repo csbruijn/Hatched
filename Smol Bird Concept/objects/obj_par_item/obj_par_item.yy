@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_swarm",
-  "spriteId": {
-    "name": "spr_swarm",
-    "path": "sprites/spr_swarm/spr_swarm.yy",
-  },
+  "name": "obj_par_item",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -26,13 +23,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mob",
-    "path": "folders/Objects/Mob.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
 }
