@@ -15,6 +15,7 @@ if (global.playerControl == false) {
 	moveDown = 0;
 }
 
+
 // calculate movement
 vx = ((moveRight - moveLeft) * walkSpeed) ;
 vy = ((moveDown - moveUp) * walkSpeed) ;
@@ -109,4 +110,5 @@ depth =-y;
 
 //push swarm
 scr_push();
+
 

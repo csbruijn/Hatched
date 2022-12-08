@@ -19,5 +19,6 @@ inventorySlot03 = noone;
 inventorySlot04 = noone;
 
 
+
 // Depth sorting
 depth = -y;

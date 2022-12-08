@@ -6,7 +6,7 @@
     "name": "spr_player_idle_right",
     "path": "sprites/spr_player_idle_right/spr_player_idle_right.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": {
