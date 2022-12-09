@@ -20,15 +20,12 @@ if (global.playerControl == false) {
 vx = ((moveRight - moveLeft) * walkSpeed) ;
 vy = ((moveDown - moveUp) * walkSpeed) ;
 
+// Auto-choose Sprite based on state and direction
+sprite_index = playerSpr[myState][dir];
+
 //if idle
 if (vx == 0 && vy == 0) {
-	// change spire based on last direction
-	switch dir {
-		case 0: sprite_index = spr_player_idle_down; break;
-		case 1: sprite_index = spr_player_idle_up; break;
-		case 2: sprite_index = spr_player_idle_left; break;
-		case 3: sprite_index = spr_player_idle_right; break;
-	}
+	myState = playerState.idle;
 }
 
 
@@ -40,28 +37,28 @@ if (vx != 0 || vy !=0) {
 	if !collision_point(x, y+vy, obj_par_environment, true, true) {
 	y += vy;
 	}
-}
-
-//change sprite based on the diretion
-if (vy>0) {
-	sprite_index = spr_player_move_down;
-	dir = 0;
-}
-
-if (vy<0) {
-	sprite_index = spr_player_move_up;
-	dir = 1;
-}
 	
-if (vx<0) {
-	sprite_index = spr_player_move_left;
-	dir = 2;
+	//change direction based on movement
+	if (vy>0) {
+		dir = 0;
+	}
+
+	if (vy<0) {
+		dir = 1;
+	}
+	
+	if (vx<0) {
+		dir = 2;
+	}
+
+	if (vx>0) {
+		dir = 3;
+	}
+	// set state
+	myState = playerState.walking
 }
 
-if (vx>0) {
-	sprite_index = spr_player_move_right;
-	dir = 3;
-}
+
 
 // Check for collision with NPCs
 nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,
