@@ -3,27 +3,27 @@
 
 
 if (global.playerControl == true && !(nearbyItem == noone || nearbyItem == undefined)) { 
-	if (inventorySlot01 == noone || inventorySlot01 == undefined) {
+	if (slot01 == noone || slot01 == undefined) {
 		show_debug_message("picking up")
-		inventorySlot01 = nearbyItem; 
+		slot01 = nearbyItem; 
 		alarm[0] = 2;
 	}
 	else {
-			if (inventorySlot02 == noone || inventorySlot02== undefined) {
+			if (slot02 == noone || slot02== undefined) {
 			show_debug_message("picking up")
-			inventorySlot02 = nearbyItem; 
+			slot02 = nearbyItem; 
 			alarm[0] = 2;
 		}
 		else {
-				if (inventorySlot03 == noone || inventorySlot03== undefined) {
+				if (slot03 == noone || slot03== undefined) {
 				show_debug_message("picking up")
-				inventorySlot03 = nearbyItem; 
+				slot03 = nearbyItem; 
 				alarm[0] = 2;
 			}
 			else {
-					if (inventorySlot04 == noone || inventorySlot04 == undefined) {
+					if (slot04 == noone || slot04 == undefined) {
 					show_debug_message("picking up")
-					inventorySlot04 = nearbyItem; 
+					slot04 = nearbyItem; 
 					alarm[0] = 2;
 				}
 				else {	

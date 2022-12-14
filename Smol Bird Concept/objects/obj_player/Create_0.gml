@@ -14,10 +14,10 @@ nearbyNPC = noone;
 lookRange = 30;
 npcPrompt = noone;
 itemPrompt = noone;
-inventorySlot01 = noone;
-inventorySlot02 = noone;
-inventorySlot03 = noone;
-inventorySlot04 = noone;
+slot01 = noone;
+slot02 = noone;
+slot03 = noone;
+slot04 = noone;
 
 //player sprite array [myState] [dir]
 // idle 
