@@ -3,6 +3,3 @@
 // variables 
 lookRange=30;
 dinnerTime = false; 
-
-
-
