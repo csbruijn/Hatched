@@ -3,9 +3,16 @@
 
 
 if (flyBuffet == true) {
+	// do somthing
 	show_debug_message("Renee is satisfied with his buffet")
 } 
 
+// reset sprite when renee is done eating
+if (sprite_index = spr_renee_eating) { 
+	if (image_index >= image_number-1) {
+		sprite_index = spr_renee_idle;
+	}
+}
 
 
 

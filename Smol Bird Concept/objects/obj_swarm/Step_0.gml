@@ -15,18 +15,19 @@ if nearbyFrog {
 		dinnerTime = true;
 		global.playerControl=false; 
 		alarm[0] = 90;
+		obj_renee.alarm[1]= 60;
 	}
-		if (obj_swarm.x > obj_renee.x) {
+		if (obj_swarm.x > obj_renee.x + 100) {
 		obj_swarm.x -= 3 ;
 		}
-		if (obj_swarm.x < obj_renee.x) {
+		if (obj_swarm.x < obj_renee.x + 100) {
 		obj_swarm.x += 3 ;
 		}
-		if (obj_swarm.y < obj_renee.y) {
+		if (obj_swarm.y < obj_renee.y + 125) {
+		obj_swarm.y -= 3 ;
+		}
+		if (obj_swarm.y > obj_renee.y + 125) {
 		obj_swarm.y += 3 ;
-		}
-		if (obj_swarm.x < obj_renee.x) {
-		obj_swarm.x += 3 ;
 		
 	}
 }

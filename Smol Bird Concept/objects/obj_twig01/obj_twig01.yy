@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_twig01",
   "spriteId": {
-    "name": "spr_twig",
-    "path": "sprites/spr_twig/spr_twig.yy",
+    "name": "spr_item_twig",
+    "path": "sprites/spr_item_twig/spr_item_twig.yy",
   },
   "solid": false,
   "visible": true,

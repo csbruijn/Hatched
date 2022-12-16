@@ -1,7 +1,6 @@
 /// @description Interaction key
 // You can write your code in this editor
 
-
 if (global.playerControl == true && !(nearbyItem == noone || nearbyItem == undefined)) { 
 	if (slot01 == noone || slot01 == undefined) {
 		show_debug_message("picking up")
