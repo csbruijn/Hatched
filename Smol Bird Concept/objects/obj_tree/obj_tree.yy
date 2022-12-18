@@ -6,7 +6,7 @@
     "name": "spr_tree",
     "path": "sprites/spr_tree/spr_tree.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

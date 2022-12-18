@@ -6,7 +6,7 @@
     "name": "spr_pond",
     "path": "sprites/spr_pond/spr_pond.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

@@ -1,2 +1,0 @@
-//variables
-time = 0;

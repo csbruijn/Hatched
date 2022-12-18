@@ -1,7 +1,7 @@
 /// @description Player Character Creation
 
 //Variables
-walkSpeed = 16;
+walkSpeed = 14;
 vx = 0;
 vy = 0;
 moveRight = 0;
