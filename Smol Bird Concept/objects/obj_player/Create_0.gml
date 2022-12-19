@@ -1,7 +1,7 @@
 /// @description Player Character Creation
 
 //Variables
-walkSpeed = 16;
+walkSpeed = 14;
 vx = 0;
 vy = 0;
 moveRight = 0;
@@ -19,16 +19,5 @@ slot02 = noone;
 slot03 = noone;
 slot04 = noone;
 
-//player sprite array [myState] [dir]
-// idle 
-playerSpr[playerState.idle][0] = spr_player_idle_down;
-playerSpr[playerState.idle][1] = spr_player_idle_up;
-playerSpr[playerState.idle][2] = spr_player_idle_left;
-playerSpr[playerState.idle][3] = spr_player_idle_right;
-
-// Walking
-playerSpr[playerState.walking][0] = spr_player_move_down;
-playerSpr[playerState.walking][1] = spr_player_move_up;
-playerSpr[playerState.walking][2] = spr_player_move_left;
-playerSpr[playerState.walking][3] = spr_player_move_right;
-
+// Depth sorting
+depth = -y;

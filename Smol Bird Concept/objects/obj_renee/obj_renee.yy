@@ -6,7 +6,7 @@
     "name": "spr_renee_idle",
     "path": "sprites/spr_renee_idle/spr_renee_idle.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

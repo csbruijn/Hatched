@@ -6,7 +6,7 @@
     "name": "spr_barnold",
     "path": "sprites/spr_barnold/spr_barnold.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

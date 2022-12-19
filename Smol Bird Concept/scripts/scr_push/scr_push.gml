@@ -8,7 +8,7 @@ function scr_push()
  {
  scr_move(obj_player.vx,0);
  }
- vx /=2;
+ vx /=1;
  }
  
  // vertical push
@@ -19,7 +19,7 @@ function scr_push()
  {
  scr_move(0,obj_player.vy);
  }
- vy /=2;
+ vy /=1;
  }
 
 }
