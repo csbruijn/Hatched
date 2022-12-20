@@ -1,5 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description inventory GUI
+
+//font
+draw_set_font(Text_inventory);
 
 for (var i = 0; i < array_length(inv); i++) {
 	var _xx = screen_bord ;
@@ -20,7 +22,7 @@ for (var i = 0; i < array_length(inv); i++) {
 	//description
 	
 	if selected_item == i {
-		draw_text_ext(_xx, _yy + _sep * array_length(inv), inv[i].description, 12, 800 ); 
+		draw_text_ext(_xx, _yy + _sep * array_length(inv), inv[i].description, 40, 800 ); 
 	}
 	
 	// reset colour to white
