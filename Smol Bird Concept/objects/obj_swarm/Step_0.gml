@@ -6,8 +6,8 @@
 depth =-y
 
 // Check for collision with Swarm
-nearbyFrog = collision_rectangle(x-(lookRange), y-lookRange,
-x+(lookRange), y+(lookRange),obj_renee,false,true);
+nearbyFrog = collision_rectangle(x-(lookRange), y-(lookRange),
+x+(lookRange), y+(2*lookRange),obj_renee,false,true);
 
 // trigger flie eating 
 if nearbyFrog {

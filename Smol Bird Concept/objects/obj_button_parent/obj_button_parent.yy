@@ -33,7 +33,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "menu",
+    "path": "folders/Objects/UI/menu.yy",
   },
 }
