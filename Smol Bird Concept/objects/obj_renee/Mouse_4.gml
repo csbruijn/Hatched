@@ -1,5 +1,5 @@
 /// @description interact
-if (!instance_exists(obj_textbox)) {
+if (!instance_exists(obj_textbox)) && (flyBuffet == false){
 	//Create
 	var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
 	
@@ -10,5 +10,21 @@ if (!instance_exists(obj_textbox)) {
 		var _arr = msg[i];
 		
 		ds_list_add(_list, _arr);
+	}
+}
+
+else
+if (!instance_exists(obj_textbox)) && (flyBuffet == true)
+{
+	//Create
+	var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
+	
+	// Add messages to textbox's list
+	var _list = _tb.messages;
+	
+	for (var i=0; i<array_length(msgNotHungry); i++) {
+		var _arr = msgNotHungry[i];
+		
+		ds_list_add(_list, _arr);	
 	}
 }

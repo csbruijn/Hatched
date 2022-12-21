@@ -20,7 +20,7 @@ if (sprite_exists(_image)) {
 	var _imageH = sprite_get_height(_image);
 	
 	// Draw
-	draw_sprite(_image, 0, _drawX + _imageW / 2, _drawY + _imageH / 2);
+	draw_sprite(_image, 0, _drawX + _imageW / 2, _drawY + _imageH);
 	
 	// Offset drawing position for text
 	_drawX += _imageW + padding;

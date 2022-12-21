@@ -4,6 +4,7 @@
 
 if (flyBuffet == true) {
 	show_debug_message("Renee is satisfied with his buffet")
+	
 } 
 
 // reset sprite when renee is done eating
