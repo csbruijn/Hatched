@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=fa26B54JDDk
+
 // get selected item
 selected_item = -1;
 for (var i = 0; i < array_length(inv); i++) {

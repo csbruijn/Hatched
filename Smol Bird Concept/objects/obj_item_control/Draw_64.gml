@@ -1,4 +1,5 @@
 /// @description inventory GUI
+//https://www.youtube.com/watch?v=fa26B54JDDk
 
 //font
 draw_set_font(Text_inventory);
