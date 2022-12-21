@@ -12,8 +12,8 @@ msg = [
 msgNotHungry = [
 ["Eyo that was pretty tasty!", "Renee", spr_renee_idle],
 ["Sure looked like you enjoyed it!", "Bird", spr_player_idle_right],
-["Listen kid, I don't know any birds around here since I'm not on good terms with them BUT I do know a busy little beaver that may be able to help you since he knows all about trees.", "Renee", spr_renee_idle],
-["thank you much monsieur.", "Bird", spr_player_idle_right],
+["Listen kid, I don't know any birds around here BUT I do know a busy little beaver that may be able to help you since he knows all about trees.", "Renee", spr_renee_idle],
+["Thank you so much monsieur.", "Bird", spr_player_idle_right],
 ]
 
 // variables 
