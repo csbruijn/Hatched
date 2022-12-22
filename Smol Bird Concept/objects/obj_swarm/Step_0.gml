@@ -14,19 +14,19 @@ if nearbyFrog {
 	if (dinnerTime == false) {
 		dinnerTime = true;
 		global.playerControl=false; 
-		alarm[0] = 90;
+		 alarm[0] = 90;
 		obj_renee.alarm[0] = 60;
 	}
-		if (obj_swarm.x > obj_renee.x-50) {
+		if (obj_swarm.x > obj_renee.x) {
 		obj_swarm.x -= 6 ;
 		}
-		if (obj_swarm.x < obj_renee.x-50) {
+		if (obj_swarm.x < obj_renee.x) {
 		obj_swarm.x += 6 ;
 		}
-		if (obj_swarm.y < obj_renee.y-250) {
+		if (obj_swarm.y < obj_renee.y) {
 		obj_swarm.y += 6 ;
 		}
-		if (obj_swarm.y > obj_renee.y-250) {
+		if (obj_swarm.y > obj_renee.y) {
 		obj_swarm.x -= 6 ;
 		
 	}
