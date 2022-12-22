@@ -11,7 +11,7 @@ messageText = string_copy(_text, 1, messageChar);
 if (messageChar <= string_length(_text)) messageChar += messageSpeed;
 
 // String fully drawn 
-else if (keyboard_check_pressed(vk_space)) {
+else if (keyboard_check_pressed(ord("F"))) {
 	// Go to next message
 	if (messageID < ds_list_size(messages) - 1) {
 		messageID++;
@@ -21,6 +21,6 @@ else if (keyboard_check_pressed(vk_space)) {
 	else {
 		// give control back to the player
 		global.playerControl = true;
-		instance_destroy();
+		alarm[0] = 2 ;
 	}
 }

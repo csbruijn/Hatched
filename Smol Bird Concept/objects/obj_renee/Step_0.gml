@@ -23,7 +23,7 @@ x+lookRange, y+lookRange,obj_player,false,true);
 if nearbyPC { 
 	
 	// press E to open dialogue
-	if (keyboard_check_pressed((ord("E"))) && !instance_exists(obj_textbox)) { 
+	if (keyboard_check_pressed((ord("F"))) && !instance_exists(obj_textbox)) { 
 		
 		if (flyBuffet == false) {
 			
