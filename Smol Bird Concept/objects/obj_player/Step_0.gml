@@ -39,7 +39,10 @@ if (!global.pause)
 		if !collision_point(x, y+vy, obj_par_environment, true, true){
 			y += vy;
 		}
+		// Move audio listener with me
+		audio_listener_set_position(0,x,y,0);
 	}
+	
 }
 
 //change sprite based on the diretion
@@ -91,6 +94,5 @@ depth =-y;
 //push swarm
 scr_push();
 
-//move audio listener to me 
 
 
