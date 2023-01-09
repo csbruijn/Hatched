@@ -7,7 +7,7 @@ if (global.pause)
 	if (pauseOptionselected >= array_length(pauseOption)) pauseOptionselected = 0;
 	if (pauseOptionselected < 0) pauseOptionselected = array_length(pauseOption) -1;
 	
-	keyActivate = keyboard_check_pressed(vk_space);
+	keyActivate = keyboard_check_pressed(ord("F"));
 	if (keyActivate)
 	{
 		switch (pauseOptionselected)

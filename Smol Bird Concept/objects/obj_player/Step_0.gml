@@ -39,7 +39,10 @@ if (!global.pause)
 		if !collision_point(x, y+vy, obj_par_environment, true, true){
 			y += vy;
 		}
+		// Move audio listener with me
+		audio_listener_set_position(0,x,y,0);
 	}
+	
 }
 
 //change sprite based on the diretion
@@ -70,7 +73,7 @@ if nearbyNPC {
 	show_debug_message("Player found NPC");
 	// Pop up prompt
 	if (npcPrompt == noone || npcPrompt == undefined) {
-		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-170);
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-300);
 	}
 }
 

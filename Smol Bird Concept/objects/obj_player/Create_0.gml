@@ -14,10 +14,7 @@ lookRange = 30;
 npcPrompt = noone;
 itemPrompt = noone;
 myState = playerState.idle;
-inventorySlot01 = noone;
-inventorySlot02 = noone;
-inventorySlot03 = noone;
-inventorySlot04 = noone;
+
 
 /*
 case 0: sprite_index = spr_player_idle_down; break;
@@ -44,3 +41,6 @@ playerSpr[playerState.walking] [3] = spr_player_move_right;
 // Depth sorting
 depth = -y;
 
+// create listener and set orientation 
+audio_listener_set_position(0,x,y,0)
+audio_listener_set_orientation(0,0,1,0,0,0,1)
