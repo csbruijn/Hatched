@@ -67,7 +67,7 @@
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":4,},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"order":0,},
     {"id":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},"order":1,},
-    {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},"order":1,},
+    {"id":{"name":"spr_button_main","path":"sprites/spr_button_main/spr_button_main.yy",},"order":1,},
     {"id":{"name":"Menu_Font","path":"fonts/Menu_Font/Menu_Font.yy",},"order":1,},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"order":7,},
     {"id":{"name":"scr_move","path":"scripts/scr_move/scr_move.yy",},"order":1,},

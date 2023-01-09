@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_button_settings",
   "spriteId": {
-    "name": "Sprite21",
-    "path": "sprites/Sprite21/Sprite21.yy",
+    "name": "spr_button_main",
+    "path": "sprites/spr_button_main/spr_button_main.yy",
   },
   "solid": false,
   "visible": true,
