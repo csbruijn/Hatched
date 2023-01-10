@@ -19,7 +19,7 @@ var _guiW = display_get_gui_width();
 var _guiH = display_get_gui_height();
 
 // Textbox dimensions
-height = floor(_guiH * 0.25);
+height = floor(_guiH * 0.27);
 width = _guiW;
 
 // Position on screen

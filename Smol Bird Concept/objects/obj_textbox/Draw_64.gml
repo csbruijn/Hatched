@@ -7,6 +7,10 @@ var _image = _arr[MSG.IMAGE];
 // Set text font 
 draw_set_font(Text_bubbles);
 
+//align text
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
 // Draw textbox
 scr_draw_9slice(x, y, width, height, spr_Textbox, 0);
 
