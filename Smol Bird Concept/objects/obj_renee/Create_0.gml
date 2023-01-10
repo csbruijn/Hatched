@@ -19,4 +19,4 @@ msgNotHungry = [
 // variables 
 flyBuffet = false;
 nearbyPC = noone; 
-lookRange = 30; 
+lookRange = 180; 
