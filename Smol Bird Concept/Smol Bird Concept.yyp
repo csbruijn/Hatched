@@ -66,6 +66,7 @@
     {"id":{"name":"obj_tree_pine","path":"objects/obj_tree_pine/obj_tree_pine.yy",},"order":6,},
     {"id":{"name":"spr_player_idle_up","path":"sprites/spr_player_idle_up/spr_player_idle_up.yy",},"order":3,},
     {"id":{"name":"obj_item_overworld","path":"objects/obj_item_overworld/obj_item_overworld.yy",},"order":0,},
+    {"id":{"name":"swarm_path","path":"paths/swarm_path/swarm_path.yy",},"order":0,},
     {"id":{"name":"spr_renee_idle","path":"sprites/spr_renee_idle/spr_renee_idle.yy",},"order":0,},
     {"id":{"name":"snd_swarm_of_flies","path":"sounds/snd_swarm_of_flies/snd_swarm_of_flies.yy",},"order":1,},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":4,},
