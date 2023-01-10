@@ -42,3 +42,6 @@ if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300)
 
 
 
+// move audio emmiter with me 
+audio_emitter_position(myEmitter, x, y ,0);
+

@@ -3,8 +3,12 @@
 // variables 
 lookRange= 120;
 dinnerTime = false; 
-
 myEmitter = 0;
+recentlyPushed = false;
+
+
+originX = obj_swarm.x;
+originY = obj_swarm.y; 
 
 // create emitter
 
@@ -13,7 +17,8 @@ if (useSound != noone) {
 		myEmitter = audio_emitter_create();
 		audio_emitter_position(myEmitter, x, y ,0);
 		audio_falloff_set_model(audio_falloff_exponent_distance);
-		audio_emitter_falloff(myEmitter, fallStart, maxDist, 1);
+		audio_emitter_falloff(myEmitter, fallStart, maxDist, 2);
 		audio_play_sound_on(myEmitter,useSound,1,1);
 	}
 }
+
