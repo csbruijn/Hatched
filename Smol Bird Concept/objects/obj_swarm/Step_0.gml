@@ -37,7 +37,7 @@ if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300)
     playerdirection = point_direction(x, y, obj_player.x, obj_player.y)
     direction = playerdirection + 180
     speed = 5
-	alarm[1] = room_speed;
+	alarm[2] = room_speed;
 	}
 
 
