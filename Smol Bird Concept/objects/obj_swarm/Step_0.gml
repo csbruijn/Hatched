@@ -32,15 +32,26 @@ if nearbyFrog {
 		}
 	}
 
-if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300) 
+/*if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300) 
 	{
     playerdirection = point_direction(x, y, obj_player.x, obj_player.y)
     direction = playerdirection + 180
     speed = 5
 	alarm[2] = room_speed;
 	}
+*/
+
+ 
 
 
+if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300) { 
+	xDistance = sqrt((obj_swarm.x - obj_player.x) * (obj_swarm.x -  obj_player.x));
+	yDistance = sqrt((obj_swarm.y - obj_player.y) * (obj_swarm.y -  obj_player.y));
+	path = path_add();
+	mp_linear_path_object(path, xDistance, yDistance, 12 ,obj_par_environment)
+	alarm [1] = 150 ;
+	alarm[2] = room_speed;
+	}
 
 // move audio emmiter with me 
 audio_emitter_position(myEmitter, x, y ,0);

@@ -15,6 +15,7 @@
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":9,},
     {"id":{"name":"spr_bush_vertical","path":"sprites/spr_bush_vertical/spr_bush_vertical.yy",},"order":3,},
     {"id":{"name":"spr_renee_eating","path":"sprites/spr_renee_eating/spr_renee_eating.yy",},"order":3,},
+    {"id":{"name":"Script9","path":"scripts/Script9/Script9.yy",},"order":3,},
     {"id":{"name":"spr_player_move_left","path":"sprites/spr_player_move_left/spr_player_move_left.yy",},"order":2,},
     {"id":{"name":"snd_sing","path":"sounds/snd_sing/snd_sing.yy",},"order":3,},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":7,},

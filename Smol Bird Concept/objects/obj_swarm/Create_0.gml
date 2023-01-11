@@ -4,7 +4,8 @@
 lookRange= 120;
 dinnerTime = false; 
 myEmitter = 0;
-recentlyPushed = false;
+xDistance = 0 ;
+yDistance = 0;
 
 
 originX = obj_swarm.x;
