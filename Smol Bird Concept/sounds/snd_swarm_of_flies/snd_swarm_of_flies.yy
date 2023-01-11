@@ -4,7 +4,7 @@
   "name": "snd_swarm_of_flies",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.49,
+  "volume": 0.53,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_swarm_of_flies.wav",
-  "duration": 0.0,
+  "duration": 18.776552,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

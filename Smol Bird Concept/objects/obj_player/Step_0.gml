@@ -89,6 +89,19 @@ if !nearbyNPC {
 	scr_dismissPrompt(npcPrompt,0);
 }
 
+nearbyItem = collision_rectangle(x-lookRange, y-lookRange,
+x+lookRange, y+lookRange,obj_par_item,false,true);
+
+if nearbyItem {
+	if (itemPrompt == noone || npcPrompt == undefined) { 
+		itemPrompt = scr_showPrompt(nearbyItem, nearbyItem.x, nearbyItem.y-100 );
+	}
+}
+
+if !nearbyItem {
+	scr_dismissPrompt(itemPrompt,1);
+}
+
 // Auto-choose Sprite based on state and direction
 sprite_index = playerSpr[myState][dir];
 
@@ -96,8 +109,6 @@ sprite_index = playerSpr[myState][dir];
 //depthsorting
 depth =-y;
 
-//push swarm
-scr_push();
 
 
 
