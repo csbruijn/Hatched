@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_controls",
-  "spriteId": null,
+  "name": "obj_icon_frog",
+  "spriteId": {
+    "name": "spr_icon_frog",
+    "path": "sprites/spr_icon_frog/spr_icon_frog.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -22,13 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu",
-    "path": "folders/Objects/UI/menu.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

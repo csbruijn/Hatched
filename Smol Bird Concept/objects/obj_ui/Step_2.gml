@@ -23,7 +23,15 @@ if (global.pause)
 		
 			case 1: //Options
 			{
-			//add later
+			if (instance_exists(obj_controls))
+			{
+			instance_destroy(obj_controls)
+			}
+
+			else
+			{
+		instance_create_layer(1920 / 2, 1080 - 100, "Instances", obj_controls);
+			}	
 			}break;
 		
 			case 2: //quit
