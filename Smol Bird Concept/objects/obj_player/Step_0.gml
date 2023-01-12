@@ -44,8 +44,11 @@ if (!global.pause)
 	}
 	
 	if (keyboard_check_pressed(vk_space))
-	{    
-   audio_play_sound(snd_sing,1,false);
+	{
+		if !(audio_is_playing(snd_sing)) 
+		{
+			audio_play_sound(snd_sing,1,false);
+		}
 	}
 
 }
