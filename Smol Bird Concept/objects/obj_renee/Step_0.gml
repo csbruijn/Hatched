@@ -40,6 +40,7 @@ if nearbyPC {
 		
 				ds_list_add(_list, _arr);
 			}
+			instance_create_depth(1920, 0, y - 300 , obj_icon_frog)
 		}
 
 		else if  (flyBuffet == true) {
