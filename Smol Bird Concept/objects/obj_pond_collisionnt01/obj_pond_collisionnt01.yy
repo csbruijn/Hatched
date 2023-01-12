@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pond01",
+  "name": "obj_pond_collisionnt01",
   "spriteId": {
     "name": "spr_pond",
     "path": "sprites/spr_pond/spr_pond.yy",
@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_par_environment",
+    "path": "objects/obj_par_environment/obj_par_environment.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
