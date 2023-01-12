@@ -1,11 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 // variables 
-lookRange= 120;
+lookRange= 240;
 dinnerTime = false; 
 myEmitter = 0;
-recentlyPushed = false;
-
 
 originX = obj_swarm.x;
 originY = obj_swarm.y; 
