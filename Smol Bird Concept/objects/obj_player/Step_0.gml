@@ -96,8 +96,5 @@ sprite_index = playerSpr[myState][dir];
 //depthsorting
 depth =-y;
 
-//push swarm
-scr_push();
-
 
 
