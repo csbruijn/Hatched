@@ -1,4 +1,4 @@
-/// @description pick up item event
+/// @description DELETE? pick up item event
 
 // add animation
 

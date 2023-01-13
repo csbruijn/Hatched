@@ -39,7 +39,18 @@ if (!global.pause)
 		if !collision_point(x, y+vy, obj_par_environment, true, true){
 			y += vy;
 		}
+		// Move audio listener with me
+		audio_listener_set_position(0,x,y,0);
 	}
+	
+	if (keyboard_check_pressed(vk_space))
+	{
+		if !(audio_is_playing(snd_sing)) 
+		{
+			audio_play_sound(snd_sing,1,false);
+		}
+	}
+
 }
 
 //change sprite based on the diretion
@@ -70,7 +81,7 @@ if nearbyNPC {
 	show_debug_message("Player found NPC");
 	// Pop up prompt
 	if (npcPrompt == noone || npcPrompt == undefined) {
-		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-170);
+		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-300);
 	}
 }
 
@@ -87,9 +98,6 @@ sprite_index = playerSpr[myState][dir];
 
 //depthsorting
 depth =-y;
-
-//push swarm
-scr_push();
 
 
 

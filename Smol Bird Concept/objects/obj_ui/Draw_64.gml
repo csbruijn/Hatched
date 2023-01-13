@@ -29,6 +29,9 @@ if(global.pause)
 		draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.4 + 50 + (i*40),_print);
 		draw_set_alpha(1.0);
 	}
+	
+	
+	
 }
 
 

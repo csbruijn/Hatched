@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "objects for intro",
-    "path": "folders/Objects/INTRO/objects for intro.yy",
+    "name": "Sequences",
+    "path": "folders/Sequences.yy",
   },
 }

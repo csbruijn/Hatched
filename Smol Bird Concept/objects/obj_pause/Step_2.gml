@@ -1,5 +1,5 @@
 /// @description Pause game
-if (keyboard_check_pressed(vk_escape))
+if (keyboard_check_pressed(vk_escape)) && (!instance_exists(obj_textbox))
 {
 	//toggle pause
 	global.pause = !global.pause;

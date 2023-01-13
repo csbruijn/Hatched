@@ -4,6 +4,7 @@
 
 if (flyBuffet == true) {
 	show_debug_message("Renee is satisfied with his buffet")
+	
 } 
 
 // reset sprite when renee is done eating
@@ -14,4 +15,53 @@ if (sprite_index = spr_renee_eating) {
 }
 
 
+// Check for collision with player
+nearbyPC = collision_rectangle(x-lookRange, y-lookRange,
+x+lookRange, y+lookRange,obj_player,false,true);
 
+// if the PC is nearby
+if nearbyPC { 
+	
+	// press F or Enter to open dialogue
+	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox)) { 
+		
+		if (flyBuffet == false) {
+			
+			// take control away from player
+			global.playerControl = false; 
+			//Create
+			var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
+	
+			// Add messages to textbox's list
+			var _list = _tb.messages;
+	
+			for (var i=0; i<array_length(msg); i++) {
+				var _arr = msg[i];
+		
+				ds_list_add(_list, _arr);
+			}
+			instance_create_depth(1920, 0, y - 300 , obj_icon_frog)
+		}
+
+		else if  (flyBuffet == true) {
+			
+			// take control away from player
+			global.playerControl = false; 
+			
+			//Create
+			var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
+	
+			// Add messages to textbox's list
+			var _list = _tb.messages;
+	
+			for (var i=0; i<array_length(msgNotHungry); i++) {
+				var _arr = msgNotHungry[i];
+		
+				ds_list_add(_list, _arr);	
+			}
+		}
+	}
+}
+
+//depth
+depth = -y; 

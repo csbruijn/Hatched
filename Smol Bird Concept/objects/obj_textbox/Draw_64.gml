@@ -7,6 +7,10 @@ var _image = _arr[MSG.IMAGE];
 // Set text font 
 draw_set_font(Text_bubbles);
 
+//align text
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
 // Draw textbox
 scr_draw_9slice(x, y, width, height, spr_Textbox, 0);
 
@@ -20,7 +24,7 @@ if (sprite_exists(_image)) {
 	var _imageH = sprite_get_height(_image);
 	
 	// Draw
-	draw_sprite(_image, 0, _drawX + _imageW / 2, _drawY + _imageH / 2);
+	draw_sprite(_image, 0, _drawX + _imageW / 2, _drawY + _imageH);
 	
 	// Offset drawing position for text
 	_drawX += _imageW + padding;
