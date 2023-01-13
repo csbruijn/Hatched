@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fade_in_baseclass_2",
+  "name": "obj_fadeout_FR9",
   "spriteId": null,
   "solid": false,
   "visible": true,
