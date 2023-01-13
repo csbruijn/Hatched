@@ -26,6 +26,7 @@
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},"order":0,},
     {"id":{"name":"spr_inventory_base","path":"sprites/spr_inventory_base/spr_inventory_base.yy",},"order":0,},
     {"id":{"name":"spr_bush_horizontal","path":"sprites/spr_bush_horizontal/spr_bush_horizontal.yy",},"order":1,},
+    {"id":{"name":"snd_main_menu","path":"sounds/snd_main_menu/snd_main_menu.yy",},"order":4,},
     {"id":{"name":"scr_soundEmmiter","path":"scripts/scr_soundEmmiter/scr_soundEmmiter.yy",},"order":6,},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":0,},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},"order":1,},
