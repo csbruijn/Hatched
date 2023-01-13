@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "INTRO",
+    "path": "folders/Sequences/INTRO.yy",
   },
 }
