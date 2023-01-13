@@ -62,3 +62,6 @@ if nearbyPC {
 		}
 	}
 }
+
+//depth
+depth = -y; 

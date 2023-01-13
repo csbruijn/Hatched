@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
+  "name": "obj_frog_block",
   "spriteId": {
-    "name": "spr_block",
-    "path": "sprites/spr_block/spr_block.yy",
+    "name": "spr_block3",
+    "path": "sprites/spr_block3/spr_block3.yy",
   },
   "solid": false,
   "visible": false,
