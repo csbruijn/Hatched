@@ -30,7 +30,9 @@ if nearbyPC {
 			// take control away from player
 			global.playerControl = false; 
 			//Create
-			var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
+			create_textbox(text_id);
+			
+			/*var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
 	
 			// Add messages to textbox's list
 			var _list = _tb.messages;
@@ -39,7 +41,7 @@ if nearbyPC {
 				var _arr = msg[i];
 		
 				ds_list_add(_list, _arr);
-			}
+			}*/
 		}
 
 		else if  (flyBuffet == true) {
@@ -48,7 +50,7 @@ if nearbyPC {
 			global.playerControl = false; 
 			
 			//Create
-			var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
+			/*var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
 	
 			// Add messages to textbox's list
 			var _list = _tb.messages;
@@ -57,7 +59,7 @@ if nearbyPC {
 				var _arr = msgNotHungry[i];
 		
 				ds_list_add(_list, _arr);	
-			}
+			}*/
 		}
 	}
 }
