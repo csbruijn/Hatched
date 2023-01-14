@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shitty_twig_shack",
   "spriteId": {
-    "name": "spr_shack",
-    "path": "sprites/spr_shack/spr_shack.yy",
+    "name": "spr_nest",
+    "path": "sprites/spr_nest/spr_nest.yy",
   },
   "solid": false,
   "visible": true,
