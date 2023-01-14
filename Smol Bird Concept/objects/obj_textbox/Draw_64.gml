@@ -160,28 +160,35 @@ draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_s
 if draw_char == text_length[page] && page == page_number-1
 {
 	//option selection
-	option_pos += keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
+	option_pos += keyboard_check_pressed(ord("A")) - keyboard_check_pressed(ord("D"));
 	option_pos = clamp(option_pos, 0, option_number-1);
 	
 	//draw the options
-	var _op_space = 70;
+	var _op_space = 300;
 	var _op_bord = 15; 
 	for (var op = 0; op < option_number; op++)
 	{
 		//the option box
 		var _o_w = string_width(option[op]) + _op_bord*2;
-		//space on the left of the option
-		draw_sprite_ext(spr_options, txtb_img, _txtb_x + 100, _txtb_y - _op_space*option_number + _op_space*op, _o_w/txtb_spr_w, (_op_space-5)/txtb_spr_h, 0, c_white, 1);
-		//draw_sprite(spr_options, txtb_img, 50, 540);
+		
+		
+		//draw options sprite 
+		
+		//draw_sprite_ext(spr_Textbox, txtb_img, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op, _o_w/txtb_spr_w, (_op_space)/txtb_spr_h, 0, c_white, 1);
+		//draw_sprite_ext(spr_options, txtb_img, _txtb_x + 1300 - 650*op, _txtb_y + 150, _o_w/txtb_spr_w, (_op_space-5)/txtb_spr_h, 0, c_white, 1);
+		draw_sprite(spr_options, txtb_img, _txtb_x + 820 - 780*op, _txtb_y + 125);
+		
 		
 		//the arrow
-		if (option_pos ==op)
+		if (option_pos == op)
 		{
-			draw_sprite(spr_textbox_arrow, 0, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op);
+			//draw_sprite(spr_textbox_arrow, 0, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op);
+			draw_sprite(spr_textbox_arrow, 0, _txtb_x + 820 - 780*op, _txtb_y + 140);
 		}
 		
 		//the options text
-		draw_text(_txtb_x + 100 + _op_bord, _txtb_y - _op_space*option_number + _op_space*op + 7, option[op]);
+		//draw_text(_txtb_x + 100 + _op_bord, _txtb_y - _op_space*option_number + _op_space*op + 7, option[op]);
+		draw_text(_txtb_x + 820 - 780*op + 100 + _op_bord, _txtb_y + 140 + 14, option[op]);
 	}
 }
 

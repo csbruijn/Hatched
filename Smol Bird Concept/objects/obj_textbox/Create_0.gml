@@ -5,8 +5,6 @@ border = 35;
 line_sep = 50;
 line_width = textbox_width - border * 2;
 txtb_spr[0] = spr_Textbox;
-
-//if textbox is animated
 txtb_img = 0;
 txtb_img_spd = 0;
 
