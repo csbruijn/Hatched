@@ -74,20 +74,33 @@ if (vx>0) {
 nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_par_npc,false,true);
 
+nearbyItem = collision_rectangle(x-lookRange, y-lookRange,
+x+lookRange, y+lookRange,obj_item_overworld,false,true);
+
+// picking up item with space
+if nearbyItem {
+	if (itemPrompt == noone || itemPrompt == undefined) {
+		itemPrompt = scr_showPrompt(nearbyItem,nearbyItem.x+50,nearbyItem.y-70);
+	}
+}
+if !nearbyItem { 
+	scr_dismissPrompt(itemPrompt,1);
+}
+
+
 
 //When nearby NPC
-if nearbyNPC {
+if (nearbyNPC && global.playerControl=true) {
 	// debug msg
 	show_debug_message("Player found NPC");
 	// Pop up prompt
 	if (npcPrompt == noone || npcPrompt == undefined) {
 		npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-300);
+
 	}
 }
 
 if !nearbyNPC {
-	//somthing else
-	
 	// Get rid of Prompt
 	scr_dismissPrompt(npcPrompt,0);
 }
@@ -98,6 +111,3 @@ sprite_index = playerSpr[myState][dir];
 
 //depthsorting
 depth =-y;
-
-
-

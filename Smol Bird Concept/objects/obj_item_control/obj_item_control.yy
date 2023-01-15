@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "inventory",
-    "path": "folders/Objects/UI/inventory.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
 }
