@@ -36,6 +36,7 @@
     {"id":{"name":"obj_pond01","path":"objects/obj_pond01/obj_pond01.yy",},"order":3,},
     {"id":{"name":"obj_sounds","path":"objects/obj_sounds/obj_sounds.yy",},"order":0,},
     {"id":{"name":"obj_bush_horizontal01","path":"objects/obj_bush_horizontal01/obj_bush_horizontal01.yy",},"order":2,},
+    {"id":{"name":"spr_button_selected","path":"sprites/spr_button_selected/spr_button_selected.yy",},"order":7,},
     {"id":{"name":"spr_menu_tree","path":"sprites/spr_menu_tree/spr_menu_tree.yy",},"order":6,},
     {"id":{"name":"scr_draw_9slice","path":"scripts/scr_draw_9slice/scr_draw_9slice.yy",},"order":0,},
     {"id":{"name":"spr_player_move_down","path":"sprites/spr_player_move_down/spr_player_move_down.yy",},"order":7,},

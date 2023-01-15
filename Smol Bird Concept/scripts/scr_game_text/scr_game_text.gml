@@ -50,7 +50,7 @@ switch(_text_id)
 		
 		case "frog - tree":
 		scr_text("I need to get back to the top of the big tree. Do you know the way up?", "bird");
-		scr_text("Nah mate wouldn’t even know why anyone would go up in there; there is probably like no flies up there.", "renee", -1);
+		scr_text("Nah mate wouldn't even know why anyone would go up in there; there is probably like no flies up there.", "renee", -1);
 		scr_text("My home is in there that's why I want to get in there.", "bird");
 		scr_text("I really hope that you find your way back.", "renee", -1);
 			scr_option ("Me too...", "frog - bye");
