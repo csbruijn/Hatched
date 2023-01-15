@@ -11,7 +11,7 @@
     {"id":{"name":"obj_barnold","path":"objects/obj_barnold/obj_barnold.yy",},"order":2,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},"order":5,},
-    {"id":{"name":"MainRoomBadgerBeaver","path":"rooms/MainRoomBadgerBeaver/MainRoomBadgerBeaver.yy",},"order":5,},
+    {"id":{"name":"BeaverRoom","path":"rooms/BeaverRoom/BeaverRoom.yy",},"order":5,},
     {"id":{"name":"spr_player_idle_right","path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},"order":1,},
     {"id":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"order":0,},
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},"order":9,},
@@ -124,7 +124,7 @@
     {"roomId":{"name":"MainRoomnt","path":"rooms/MainRoomnt/MainRoomnt.yy",},},
     {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"roomId":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
-    {"roomId":{"name":"MainRoomBadgerBeaver","path":"rooms/MainRoomBadgerBeaver/MainRoomBadgerBeaver.yy",},},
+    {"roomId":{"name":"BeaverRoom","path":"rooms/BeaverRoom/BeaverRoom.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
