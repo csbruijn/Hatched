@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_barnold",
-  "spriteId": {
-    "name": "spr_barnold",
-    "path": "sprites/spr_barnold/spr_barnold.yy",
-  },
+  "spriteId": null,
   "solid": true,
   "visible": true,
   "managed": true,
