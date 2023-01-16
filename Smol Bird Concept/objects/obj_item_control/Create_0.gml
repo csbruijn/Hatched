@@ -7,12 +7,12 @@ depth = -9999;
 
 
 // item constructer
-function create_item(_name, _descr, _spr, _effect/*,_worldSpr*/) constructor {
+function create_item(_name, _descr, _spr, _worldSpr, _effect) constructor {
 	itemName = _name;
 	description = _descr;
 	icon = _spr;
+	sprite = _worldSpr
 	effect = _effect;
-	//spriteInGame = _worldSpr;
 	
 }
 
@@ -23,12 +23,14 @@ global.item_list = {
 		"Twig", 
 		"It's a twig found on the floor. Great for construction!",
 		spr_item_twig,
+		spr_twig,
 	
 		// whatever the item does
 		function () { 
 			// get rid of item
 			array_delete(inv, selected_item, 1);
-			show_debug_message("twig used");
+			instance_create_depth(x,y,0,obj_item_overworld)
+			show_debug_message("twig dropped");
 		}
 		
 	),
@@ -37,6 +39,8 @@ global.item_list = {
 		"shack",
 		"it's a shitty twig shack. No. It is MY shitty twig shack.", 
 		spr_item_shack,
+		spr_nest,
+		
 			// whatever the item does
 		function () { 
 			instance_create_depth(obj_player.x,obj_player.y, 0, obj_shitty_twig_shack)
