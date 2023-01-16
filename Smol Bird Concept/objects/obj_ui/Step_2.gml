@@ -30,7 +30,7 @@ if (global.pause)
 
 			else
 			{
-		instance_create_layer(1920 / 2, 1080 - 100, "Instances", obj_controls);
+			instance_create_layer(1920 / 2, 1080 - 100, "Instances", obj_controls);
 			}	
 			}break;
 		
