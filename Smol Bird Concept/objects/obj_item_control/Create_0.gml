@@ -58,8 +58,9 @@ selected_item= -1;
 
 
 // for drawing and mouse position
-sep = 100; 
-screen_bord = 32; 
+sep = 74; 
+Xbegin = 731;
+Ybegin = 373; 
 
 
 

@@ -3,8 +3,8 @@
 // get selected item
 selected_item = -1;
 for (var i = 0; i < array_length(inv); i++) {
-	var _xx = camera_get_view_x(view_camera[0])+screen_bord ;
-	var _yy = camera_get_view_y(view_camera[0])+screen_bord + sep*i ;
+	var _xx = camera_get_view_x(view_camera[0])+Xbegin + (100+sep)*i;
+	var _yy = camera_get_view_y(view_camera[0])+Ybegin  ;
 	
 	if mouse_x > _xx  && mouse_x < _xx +100 && mouse_y > _yy && mouse_y < _yy + 100 
 	{
