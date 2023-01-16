@@ -31,6 +31,11 @@ if nearbyPC {
 			global.playerControl = false; 
 			//Create
 			create_textbox(text_id);
+			
+			// Add messages to textbox's list
+           if !instance_exists(obj_icon_frog) {
+				instance_create_depth(1920, 0, y - 300 , obj_icon_frog)
+		   }
 		}
 
 		else if  (flyBuffet == true) {
