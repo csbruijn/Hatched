@@ -1,4 +1,10 @@
 /// @description Draw UI
+
+
+//Draw tutorial
+draw_sprite(spr_tutorial, 1, 1920, 0);
+
+
 //Pause menu
 // NOTE: Must be at the bottom
 if(global.pause)

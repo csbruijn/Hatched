@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu",
-    "path": "folders/Objects/UI/menu.yy",
+    "name": "pause",
+    "path": "folders/Objects/UI/pause.yy",
   },
 }

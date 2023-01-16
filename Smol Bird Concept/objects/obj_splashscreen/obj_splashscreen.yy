@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "menu",
-    "path": "folders/Objects/UI/menu.yy",
+    "name": "splashscreen",
+    "path": "folders/Objects/UI/splashscreen.yy",
   },
 }
