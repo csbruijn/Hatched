@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_swarm_of_flies.wav",
-  "duration": 0.0,
+  "duration": 18.776552,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -8,7 +8,7 @@ if (flyBuffet == true) {
 } 
 
 // reset sprite when renee is done eating
-if (sprite_index = spr_renee_eating || sprite_index = spr_renee_jump) { 
+if (sprite_index = spr_renee_eating) { 
 	if (image_index >= image_number-1) {
 		sprite_index = spr_renee_idle;
 	}
@@ -30,38 +30,21 @@ if nearbyPC {
 			// take control away from player
 			global.playerControl = false; 
 			//Create
-			var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
-	
-			// Add messages to textbox's list
-			var _list = _tb.messages;
-	
-			for (var i=0; i<array_length(msg); i++) {
-				var _arr = msg[i];
-		
-				ds_list_add(_list, _arr);
-			}
-			instance_create_depth(1920, 0, y - 300 , obj_icon_frog)
+			create_textbox(text_id);
 		}
 
 		else if  (flyBuffet == true) {
-			
+			text_id = "frog - end";
 			// take control away from player
 			global.playerControl = false; 
 			
 			//Create
-			var _tb = instance_create_layer(0, 0, "Instances", obj_textbox);
-	
-			// Add messages to textbox's list
-			var _list = _tb.messages;
-	
-			for (var i=0; i<array_length(msgNotHungry); i++) {
-				var _arr = msgNotHungry[i];
-		
-				ds_list_add(_list, _arr);	
-			}
+			create_textbox(text_id);
 		}
 	}
 }
 
-//depth
-depth = -y; 
+if (!instance_exists(obj_textbox))
+			{
+				global.playerControl = true;
+			}
