@@ -1,3 +1,4 @@
+// Script assets have changed for v2.3.0 see
 /// @param text_id
 function scr_game_text(_text_id)
 {

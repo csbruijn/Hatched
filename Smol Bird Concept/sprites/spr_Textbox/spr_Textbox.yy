@@ -92,7 +92,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Smol Bird Concept",
-    "path": "Smol Bird Concept.yyp",
+    "name": "Dialogue",
+    "path": "folders/Sprites/UI/Dialogue.yy",
   },
 }
