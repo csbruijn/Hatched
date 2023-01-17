@@ -58,15 +58,12 @@ selected_item= -1;
 
 
 // for drawing and mouse position
-sep = 74; 
+sep = 70; 
 Xbegin = 731;
 Ybegin = 373; 
+rowLength = 5;
 
-
-
-
-
-
+global.inventorySpace = array_length(inv);
 
 
 
