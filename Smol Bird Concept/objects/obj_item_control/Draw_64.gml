@@ -26,10 +26,12 @@ if instance_exists(obj_inventory_main){
 	
 		// selected item description 
 		if selected_item == i {
-			draw_text_ext(333, 526, inv[i].description, 40, 222 );
-			draw_set_font(Text_item_name)
-			draw_text(350, 455, inv[i].itemName);
-			draw_sprite_stretched(inv[i].icon,0,358,265,150,150)
+			draw_set_halign(fa_left);
+			draw_text_ext(350, 540, inv[i].description, 40, 200 );
+			draw_set_font(Text_item_name);
+			draw_set_halign(fa_middle);
+			draw_text(444, 455, inv[i].itemName);
+			draw_sprite_stretched(inv[i].icon,0,358,265,175,175);
 		} 
 	}
 }
