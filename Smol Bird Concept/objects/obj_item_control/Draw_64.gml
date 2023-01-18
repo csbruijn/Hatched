@@ -4,30 +4,36 @@
 //font
 draw_set_font(Text_inventory);
 
-for (var i = 0; i < array_length(inv); i++) {
-	var _xx = screen_bord ;
-	var _yy = screen_bord ;
-	var _sep = sep ; 
-	var _col = c_white;
+
+if instance_exists(obj_inventory_main){
+	for (var i = 0; i < array_length(inv); i++) {
+		
+		var _sepX = sep + 100 ; 
+		var _sepY = sep + 100 - 6;
+		var _xx = Xbegin + (i mod rowLength)*_sepX;
+		var _yy = Ybegin + (i div rowLength)*_sepY;
+		var _col = c_white;
 	
-	//icon
-	draw_sprite(inv[i].icon, 0, _xx, _yy + _sep * i);
+		//icon
+		
+		draw_sprite(inv[i].icon, 0, _xx , _yy);
+		
 	
-	// get selected colour
-	if selected_item == i { _col = c_yellow; } ;
-	draw_set_color(_col);
+		
 	
-	//name
-	draw_text (_xx + 100, _yy + _sep *i , inv[i].itemName);
+		// get colour
+		draw_set_color(_col);
 	
-	//description
-	
-	if selected_item == i {
-		draw_text_ext(_xx, _yy + _sep * array_length(inv), inv[i].description, 40, 800 ); 
+		// selected item description 
+		if selected_item == i {
+			draw_set_halign(fa_left);
+			draw_text_ext(350, 540, inv[i].description, 40, 200 );
+			draw_set_font(Text_item_name);
+			draw_set_halign(fa_middle);
+			draw_text(444, 455, inv[i].itemName);
+			draw_sprite_stretched(inv[i].icon,0,358,265,175,175);
+		} 
 	}
-	
-	// reset colour to white
-	draw_set_color (c_white); 
 }
 
 
