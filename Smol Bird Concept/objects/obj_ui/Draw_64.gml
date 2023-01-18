@@ -1,4 +1,26 @@
 /// @description Draw UI
+//draw tutorials
+if (instance_exists(obj_textbox))
+{
+	draw_sprite(spr_tutorial_text, 1, 1920, 0);
+}
+
+if (room == SpawnRoom)
+{
+	draw_sprite(spr_tutorial, 1, 1920, 0);
+}
+
+/*Ability Cooldown
+if (keyboard_check(vk_space))
+{
+	draw_sprite(spr_whistle, 1, 960, 998);
+	//cooldown = 3 * room_speed;
+	//image_alpha -= 0.01;
+    alarm[0] = 50;
+}
+*///cooldown = cooldown - 1;
+
+
 //Pause menu
 // NOTE: Must be at the bottom
 if(global.pause)

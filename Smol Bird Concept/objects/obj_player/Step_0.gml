@@ -43,13 +43,7 @@ if (!global.pause)
 		audio_listener_set_position(0,x,y,0);
 	}
 	
-	if (keyboard_check_pressed(vk_space))
-	{
-		if !(audio_is_playing(snd_sing)) 
-		{
-			audio_play_sound(snd_sing,1,false);
-		}
-	}
+	
 
 }
 

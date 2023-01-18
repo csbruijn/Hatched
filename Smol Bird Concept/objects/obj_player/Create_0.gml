@@ -1,4 +1,3 @@
-/// @description Player Character Creation
 
 //Variables
 walkSpeed = 14;
@@ -15,6 +14,8 @@ npcPrompt = noone;
 itemPrompt = noone;
 myState = playerState.idle;
 
+//Cooldown
+cooldown = 0;
 
 /*
 case 0: sprite_index = spr_player_idle_down; break;

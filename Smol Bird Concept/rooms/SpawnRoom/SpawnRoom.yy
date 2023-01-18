@@ -79,7 +79,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F966C58","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetRoom","path":"objects/obj_transition_room_exit/obj_transition_room_exit.yy",},"objectId":{"name":"obj_transition_room_exit","path":"objects/obj_transition_room_exit/obj_transition_room_exit.yy",},"value":"MainRoom",},
           ],"isDnd":false,"objectId":{"name":"obj_transition_room_exit","path":"objects/obj_transition_room_exit/obj_transition_room_exit.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":26.5,"scaleY":2.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":3872.0,},
-      ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+      ],"visible":false,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_Main","tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":16,"SerialiseHeight":16,"TileCompressedData":[
 -8,6,5,9,2,14,2,3,-15,6,3,9,2,3,-15,6,
 1,5,-15,6,2,5,6,-4,2,1,3,-7,6,4,1,2,
