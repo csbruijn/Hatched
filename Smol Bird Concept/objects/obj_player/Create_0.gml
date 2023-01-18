@@ -34,6 +34,11 @@ playerSpr[playerState.walking] [1] = spr_player_move_up;
 playerSpr[playerState.walking] [2] = spr_player_move_left;
 playerSpr[playerState.walking] [3] = spr_player_move_right;
 
+playerSpr[playerState.whistle] [0] = spr_player_whistle;
+playerSpr[playerState.whistle] [1] = spr_player_whistle;
+playerSpr[playerState.whistle] [2] = spr_player_whistle;
+playerSpr[playerState.whistle] [3] = spr_player_whistle;
+
 
 // Depth sorting
 depth = -y;

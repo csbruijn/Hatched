@@ -6,6 +6,7 @@ enum playerState {
 	idle,
 	walking,
 	pickingUp,
+	whistle,
 }
 
 

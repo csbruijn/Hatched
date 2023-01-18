@@ -2,7 +2,7 @@
 if (!global.pause)
 {
 	// check keys for movement
-	if (global.playerControl == true)
+	if ((global.playerControl == true)&& myState != playerState.whistle)
 	{
 		moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 		moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
@@ -26,9 +26,19 @@ if (!global.pause)
 	//if idle
 	if (vx == 0 && vy == 0) 
 	{
-		// sprite = idle
-		myState = playerState.idle
+		if myState != playerState.whistle {
+			// sprite = idle
+			myState = playerState.idle;
+		}
 	}
+	
+// if picking up an item
+if (myState == playerState.whistle) {
+	if (image_index = 9 ) { 
+		myState = playerState.idle;
+		global.playerControl = true ;
+	}
+}
 
 	// If moving
 	if (vx != 0 || vy !=0) {
