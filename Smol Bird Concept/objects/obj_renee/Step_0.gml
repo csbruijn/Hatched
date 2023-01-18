@@ -13,7 +13,11 @@ if (sprite_index = spr_renee_eating) {
 		sprite_index = spr_renee_idle;
 	}
 }
-
+if (sprite_index = spr_renee_idle) {
+	if (image_index = 2) {
+		audio_play_sound(snd_frog,0,0);
+	}
+}
 
 // Check for collision with player
 nearbyPC = collision_rectangle(x-lookRange, y-lookRange,
