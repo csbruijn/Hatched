@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_cooldown",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_whistle",
+    "path": "sprites/spr_whistle/spr_whistle.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
