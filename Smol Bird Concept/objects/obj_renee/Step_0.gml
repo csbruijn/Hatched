@@ -20,7 +20,12 @@ nearbyPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_player,false,true);
 
 // if the PC is nearby
-if nearbyPC { 
+if nearbyPC {
+	global.hasMetFrog = true; 
+	
+	 // if !instance_exists(obj_icon_frog) {
+			//	draw_sprite(spr_icon_frog, 1, 0, 0)
+		//   }
 	
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox)) { 
@@ -33,9 +38,7 @@ if nearbyPC {
 			create_textbox(text_id);
 			
 			// Add messages to textbox's list
-           if !instance_exists(obj_icon_frog) {
-				instance_create_depth(1920, 0, y - 300 , obj_icon_frog)
-		   }
+         
 		}
 
 		else if  (flyBuffet == true) {
