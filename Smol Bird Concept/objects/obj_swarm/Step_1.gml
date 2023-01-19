@@ -8,8 +8,8 @@
 if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300)  { 
 	path_end()
 	if !instance_exists(obj_cooldown) {
-		xOpposite = obj_swarm.x + (obj_swarm.x - obj_player.x);
-		yOpposite = obj_swarm.y + (obj_swarm.y - obj_player.y);
+		xOpposite = (obj_swarm.x + (obj_swarm.x - obj_player.x));
+		yOpposite = (obj_swarm.y + (obj_swarm.y - obj_player.y));
 		pushPath = path_add();
 		if !(collision_point(x,y,obj_par_environment,0,1)) {
 			mp_linear_path_object(pushPath, xOpposite, yOpposite, 12 ,obj_par_environment)

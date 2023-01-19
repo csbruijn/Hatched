@@ -7,6 +7,12 @@ if (instance_exists(obj_player)) && (position_meeting(obj_player.x, obj_player.y
     global.targetX = targetX;
     global.targetY = targetY; 
     global.targetDirection = obj_player.direction;
+	if (room = MainRoom) {
+		audio_pause_sound(snd_flies_A);
+		audio_pause_sound(snd_flies_B);
+		audio_pause_sound(snd_flies_C);
+		audio_pause_sound(snd_flies_D);
+	}
     room_goto(targetRoom);
     instance_destroy()
 }
