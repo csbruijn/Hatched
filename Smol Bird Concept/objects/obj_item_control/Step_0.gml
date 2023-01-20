@@ -1,5 +1,7 @@
 // https://www.youtube.com/watch?v=fa26B54JDDk
 
+spawn_items ();
+
 // get selected item
 selected_item = -1;
 for (var i = 0; i < array_length(inv); i++) {

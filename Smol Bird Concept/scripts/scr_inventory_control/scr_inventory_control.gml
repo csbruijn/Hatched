@@ -5,6 +5,3 @@ function item_add(_item) {
 }
 
 
-
-
-

@@ -69,7 +69,7 @@ rowLength = 5;
 global.inventorySpace = array_length(inv);
 
 
-
+itemData = array_create(0);
 
 
 

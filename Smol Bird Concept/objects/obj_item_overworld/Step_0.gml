@@ -11,6 +11,7 @@ if keyboard_check_pressed(ord("F")) {
 	if (global.inventorySpace < 15) {
 		if place_meeting(x,y,obj_player) {
 			item_add (item) ;
+			store_item_data()
 			instance_destroy();
 		}
 	}
