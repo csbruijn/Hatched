@@ -14,14 +14,12 @@ npcPrompt = noone;
 itemPrompt = noone;
 myState = playerState.idle;
 
-/*
-case 0: sprite_index = spr_player_idle_down; break;
-case 1: sprite_index = spr_player_idle_up; break;
-case 2: sprite_index = spr_player_idle_left; break;
-case 3: sprite_index = spr_player_idle_right; break;
-*/
-
-//player sprite array [myState] [dir]
+// spawn player at target
+if (global.targetX != -1 ) {
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDirection;	
+}
 
 //idle
 playerSpr[playerState.idle] [0] = spr_player_idle_down;
