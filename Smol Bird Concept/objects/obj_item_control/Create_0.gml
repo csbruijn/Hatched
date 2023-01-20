@@ -31,7 +31,7 @@ global.item_list = {
 			array_delete(inv, selected_item, 1);
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
-				item = global.item_list.shack;
+				item = global.item_list.twig;
 			}
 			show_debug_message("twig dropped");
 		}
