@@ -52,3 +52,6 @@ if (!instance_exists(obj_textbox))
 			{
 				global.playerControl = true;
 			}
+			
+//depth sorting
+depth = -y;
