@@ -1,5 +1,7 @@
 /// @description Variables and Vertex Buffer
-//Sprite
+
+//-------------------------Grass--------------------------------//
+//Sprite - Grass
 sprite = spr_grass_1;
 frames = sprite_get_number(sprite);
 texture = sprite_get_texture(sprite, 0);
@@ -8,16 +10,14 @@ width = sprite_get_width(sprite);
 height = sprite_get_height(sprite);
 
 //Grass
-grasscount = (sprite_width * sprite_height) / 1500;
+grasscount = 20;
 
 color = c_white;
 alpha = 1;
 
-//3D
-gpu_set_ztestenable(true);
-gpu_set_alphatestenable(true);
 
-//Vertex format
+
+//Vertex format - Grass
 vertex_format_begin();
 
 vertex_format_add_position_3d();
@@ -26,7 +26,7 @@ vertex_format_add_color();
 
 format = vertex_format_end();
 
-//Vertex buffer
+//Vertex buffer - Grass
 vbuff = vertex_create_buffer();
 
 vertex_begin(vbuff, format);
@@ -41,11 +41,11 @@ repeat (grasscount)
 	
 	var _depth = -_y2;
 	
-	//Texture coordinates
+	//Texture coordinates - Grass
 	var _frame = irandom(frames - 1);
 	var _uvs = sprite_get_uvs(sprite, _frame);
 	
-	//Triangle 1
+	//Triangle 1 - Grass
 	vertex_position_3d(vbuff, _x1, _y1, _depth);
 	vertex_texcoord(vbuff, _uvs[0], _uvs[1]);
 	vertex_color(vbuff, color, alpha);
@@ -58,7 +58,7 @@ repeat (grasscount)
 	vertex_texcoord(vbuff, _uvs[0], _uvs[3]);
 	vertex_color(vbuff, color, alpha);
 	
-	//Triangle 2 
+	//Triangle 2 - Grass
 	vertex_position_3d(vbuff, _x2, _y1, _depth);
 	vertex_texcoord(vbuff, _uvs[2], _uvs[1]);
 	vertex_color(vbuff, color, alpha);
@@ -74,3 +74,5 @@ repeat (grasscount)
 
 vertex_end(vbuff);
 vertex_freeze(vbuff);
+
+
