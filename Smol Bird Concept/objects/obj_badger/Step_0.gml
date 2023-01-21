@@ -1,5 +1,6 @@
 /// @description 
 
+
 // Check for collision with player
 nearbyPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_player,false,true);

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_flowers_area",
   "spriteId": {
-    "name": "spr_flower_area",
-    "path": "sprites/spr_flower_area/spr_flower_area.yy",
+    "name": "spr_flowers_area",
+    "path": "sprites/spr_flowers_area/spr_flowers_area.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,8 +26,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
