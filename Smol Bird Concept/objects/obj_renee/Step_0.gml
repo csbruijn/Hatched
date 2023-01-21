@@ -8,7 +8,7 @@ if (flyBuffet == true) {
 } 
 
 // reset sprite when renee is done eating
-if (sprite_index = spr_renee_eating) { 
+if (sprite_index = spr_renee_eating || sprite_index = spr_renee_jump) { 
 	if (image_index >= image_number-1) {
 		sprite_index = spr_renee_idle;
 	}
