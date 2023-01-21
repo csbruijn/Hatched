@@ -2,8 +2,8 @@ accept_key = keyboard_check_pressed(ord("F"));
 textbox_x = camera_get_view_x(noone);
 textbox_y = camera_get_view_y(noone) + 795 + 20;
 
-if (setup == false)
-{
+// if (setup == false)
+// {
 	setup = true;
 	draw_set_font(Text_bubbles);
 	draw_set_valign(fa_top);
@@ -90,7 +90,7 @@ if (setup == false)
 		
 	}
 	
-}
+// }
 
 //typing the text
 if (draw_char < text_length[page])

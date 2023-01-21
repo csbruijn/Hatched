@@ -78,6 +78,7 @@ switch(_text_id)
 		scr_text("Hello there.", "bird");
 		scr_text("Good on ya birdy! Now for my end of the bargain. I might not know any way up the tree or any birds but i do know a busy little beaver and I reckon that bloke can help you out with that getting up in a tree problem since he knows all there is about trees.", "renee", -1);
 		scr_text("Thank you so much! ", "bird");
+		global.reneejump = true;
 		break;
 	}
 }
