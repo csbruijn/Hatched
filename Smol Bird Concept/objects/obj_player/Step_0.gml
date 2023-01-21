@@ -79,7 +79,7 @@ nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_par_npc,false,true);
 
 nearbyItem = collision_rectangle(x-lookRange, y-lookRange,
-x+lookRange, y+lookRange,obj_item_overworld,false,true);
+x+lookRange, y+lookRange,obj_par_item,false,true);
 
 // picking up item with space
 if nearbyItem {
