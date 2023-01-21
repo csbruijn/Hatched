@@ -19,7 +19,7 @@ if (keyboard_check_pressed(vk_space) && distance_to_object(obj_player) < 300)  {
 		}
 		path_start(pushPath,8,0,0);
 		pushPath = undefined;
-		alarm [1] = 350 ;
+		alarm [1] = 450 ;
 		alarm[2] = room_speed;
 		}
 
