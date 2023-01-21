@@ -9,5 +9,5 @@ draw_text(1326,345,_NPCname)
 draw_set_font(Text_inventory);
 draw_set_halign(fa_left);
 draw_text_ext(1150,450,_NPCtext, 40, 350)
-draw_sprite(_featherIcon,0, 800,705)
+draw_sprite(_featherIcon,0, 766,660)
 }

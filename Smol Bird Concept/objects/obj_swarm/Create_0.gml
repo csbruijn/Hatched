@@ -4,6 +4,7 @@
 lookRange= 240;
 dinnerTime = false; 
 myEmitter = 0;
+pushPath = undefined;
 
 originX = obj_swarm.x;
 originY = obj_swarm.y; 
