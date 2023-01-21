@@ -41,16 +41,6 @@ function scr_text(_text)
             speaker_sprite[page_number] = spr_bird_talk;
             txtb_spr[page_number] = spr_Textbox;
             break;
-			
-			case "barnold":
-            speaker_sprite[page_number] = spr_beaver_talk;
-            txtb_spr[page_number] = spr_Textbox;
-            break;
-			
-			case "roger":
-			speaker_sprite[page_number] = spr_badger_talk;
-            txtb_spr[page_number] = spr_Textbox;
-			break;
         }
 
     }
