@@ -15,6 +15,7 @@ function create_item(_name, _descr, _spr, _worldSpr, _effect) constructor {
 	effect = _effect;
 	
 }
+	
 
 //create the items
 global.item_list = {
@@ -54,6 +55,53 @@ global.item_list = {
 	),
 }
 
+global.feather_list = {
+	mom: new create_item(
+	"mom's feather",
+	"it is a beatiful feather that once belonged to your mom",
+	spr_feather_mom_icon,
+	spr_feather_mom,
+	function () {
+		//whatever you want 
+	}
+	),
+	
+	frog: new create_item(
+	"renee's gift",
+	"A feather gifted to you by renee for your help",
+	spr_feather_frog_icon,
+	spr_feather_frog,
+	function () {
+		//whatever you want 
+	}
+	),
+	
+	beaver: new create_item(
+	"barnold's gift",
+	"A feather gifted to you by barnold for your help",
+	spr_feather_beaver_icon,
+	spr_feather_beaver,
+	function () {
+		//whatever you want 
+	}
+	),
+	
+	badger: new create_item(
+	"badger's gift",
+	"A feather gifted to you by badger for your help",
+	spr_feather_badger_icon,
+	spr_feather_badger,
+	function () {
+		//whatever you want 
+	}
+	),
+	
+}
+	
+//create feather inventory
+feathers = array_create(0);
+selected_feather = -1; 
+
 //create inventory
 inv = array_create(0); 
 
@@ -65,6 +113,7 @@ sep = 70;
 Xbegin = 731;
 Ybegin = 373; 
 rowLength = 5;
+tab = 1; 
 
 global.inventorySpace = array_length(inv);
 

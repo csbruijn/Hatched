@@ -9,7 +9,11 @@ enum playerState {
 	whistle,
 }
 
-
-
+global.hasMetFrog = false;
+global.hasMetBadger = false;
+global.hasMetBeaver = false;
+global.frogFeather = false;
+global.badgerFeather = false;
+global.beaverFeather = false;
 
 

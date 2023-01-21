@@ -21,7 +21,9 @@ x+lookRange, y+lookRange,obj_player,false,true);
 
 // if the PC is nearby
 if nearbyPC { 
-	
+	if !global.hasMetFrog {
+		global.hasMetFrog =true;
+	}
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox)) { 
 		
@@ -60,6 +62,11 @@ if (global.reneejump == true && !instance_exists(obj_textbox))
 	image_index = 0;
 	sprite_index = spr_renee_jump;
 	instance_destroy(obj_frog_block);
+	instance_create_depth(x,y,-y,obj_feather_overworld);
+	with (obj_feather_overworld) {
+		feather = global.feather_list.frog;
+	}
+		
 	alarm [1] = 100;
 	path_start(path_jump,6,0,0);
 	global.reneejump = false;
