@@ -14,7 +14,6 @@ if (instance_exists(obj_player)) && (position_meeting(obj_player.x, obj_player.y
 		audio_pause_sound(snd_flies_D);
 	}
     room_goto(targetRoom);
-    instance_destroy()
 }
 
 
