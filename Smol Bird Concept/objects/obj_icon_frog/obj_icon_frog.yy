@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_icon_frog",
-  "spriteId": {
-    "name": "spr_icon_frog",
-    "path": "sprites/spr_icon_frog/spr_icon_frog.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

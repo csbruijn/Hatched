@@ -9,9 +9,12 @@ enum playerState {
 	whistle,
 }
 
+
+// NPC progression starts at 0
 global.hasMetFrog = false;
 global.hasMetBadger = false;
 global.hasMetBeaver = false;
+global.heardOfBeaver = false
 global.frogFeather = false;
 global.badgerFeather = false;
 global.beaverFeather = false;

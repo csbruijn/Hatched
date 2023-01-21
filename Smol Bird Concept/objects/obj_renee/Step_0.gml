@@ -58,6 +58,7 @@ if (!instance_exists(obj_textbox))
 //make Renee jump after textbox			
 if (global.reneejump == true && !instance_exists(obj_textbox))
 {
+	global.heardOfBeaver = true; 
 	global.playerControl = false; 
 	image_index = 0;
 	sprite_index = spr_renee_jump;
