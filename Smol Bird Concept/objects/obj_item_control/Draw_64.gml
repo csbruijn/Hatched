@@ -32,8 +32,20 @@ if instance_exists(obj_inventory_main){
 		
 	if ((mouse_x > camera_get_view_x(view_camera[0]) + 328) && (mouse_x < camera_get_view_x(view_camera[0]) +568)) {
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 228) && (mouse_y < camera_get_view_y(view_camera[0]) +300)) {
-			if (global.hasMetFrog = true && global.frogFeather = true) {
-				codex_info(spr_frog_talk,spr_feather_frog_collected, "Renee the Frog", "Renee the frog is a calm and collected australian bullfrog");
+			codex_info(spr_frog_talk,spr_feather_frog_collected,global.frogFeather,global.hasMetFrog,
+			"Renee the Frog", "Renee the frog is a calm and collected australian bullfrog ","text to addon");
+		}
+	
+	if ((mouse_y > camera_get_view_y(view_camera[0]) + 345) && (mouse_y < camera_get_view_y(view_camera[0]) +400)) {
+			codex_info(spr_badger_talk, spr_feather_badger_collected, global.badgerFeather, global.hasMetBadger, "Roger the Badger","Roger seems like a helpful critter! ", "Roger is plain landlord schum tbh blegh");
+		}
+	if ((mouse_y > camera_get_view_y(view_camera[0]) + 450) && (mouse_y < camera_get_view_y(view_camera[0]) +510)) {	
+				codex_info(spr_beaver_talk, spr_feather_beaver_collected,global.beaverFeather, global.hasMetBeaver, "Barnold the Beaver", "Barnold is a rudie that doesnt have time for me REEE! " , "Poor Barnold the Beaver is always busy with building houses")
+		}
+	}		
+			
+			/*if global.hasMetFrog {
+				codex_info(spr_frog_talk,spr_feather_frog_collected, "Renee the Frog", "Renee the frog is a calm and collected australian bullfrog","text to addon",global.frogFeather);
 			}
 			if (global.hasMetFrog = true && global.frogFeather = false) {
 				codex_info(spr_frog_talk,spr_unknown_feather, "Renee the Frog", "Renee the frog is a calm and collected australian bullfrog");
@@ -41,6 +53,8 @@ if instance_exists(obj_inventory_main){
 			if (global.hasMetFrog != true && global.frogFeather != true) {
 			codex_info(spr_unknown, spr_unknown_feather, "???", "???") } 
 		}
+		
+		
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 345) && (mouse_y < camera_get_view_y(view_camera[0]) +400)) {
 			if (global.hasMetBadger = true && global.badgerFeather = true) {
 				codex_info(spr_badger_talk, spr_feather_badger_collected,"Roger the Badger", "Roger is plain landlord schum tbh blegh");
@@ -51,6 +65,8 @@ if instance_exists(obj_inventory_main){
 			if (global.hasMetBadger != true && global.badgerFeather != true) {
 				codex_info(spr_unknown, spr_unknown_feather, "???", "???") } 
 		}
+		
+		
 		
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 450) && (mouse_y < camera_get_view_y(view_camera[0]) +510)) {
 			if (global.hasMetBeaver = true && global.beaverFeather = true) {	
@@ -64,6 +80,7 @@ if instance_exists(obj_inventory_main){
 		}
 	}
 }
+*/
 	// draw items and text
 	if (tab =1) { // why does switch statement make feathertab always appear
 		for (var i = 0; i < array_length(inv); i++) {
@@ -124,4 +141,4 @@ if instance_exists(obj_inventory_main){
 		}
 	}
 }
-
+}
