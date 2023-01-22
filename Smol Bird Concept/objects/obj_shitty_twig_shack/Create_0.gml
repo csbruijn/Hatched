@@ -8,7 +8,8 @@ twigsAdded = 0;
 grassAdded = 0;
 mudAdded = 0; 
  
-requiredTwigs =3;
-requiredGrass =1 ;
-requiredMud = 1;
+requiredTwigs =4;
+requiredGrass =3 ;
+requiredMud = 2;
 isPlaced = false;
+global.playerControl = false ; 

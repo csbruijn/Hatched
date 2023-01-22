@@ -25,6 +25,7 @@ if !isPlaced {
 	if !collision_point(x, y, obj_par_environment, true, true){
 		if mouse_check_button_pressed(mb_left) {
 			isPlaced = true;
+			global.playerControl = true; 
 		}
 	}
 }
