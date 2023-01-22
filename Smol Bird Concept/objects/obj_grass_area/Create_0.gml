@@ -10,7 +10,7 @@ width = sprite_get_width(sprite);
 height = sprite_get_height(sprite);
 
 //Grass
-grasscount = 20;
+grasscount = 10;
 
 color = c_white;
 alpha = 1;
