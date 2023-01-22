@@ -105,6 +105,7 @@ if (nearbyNPC && global.playerControl=true) {
 	}
 }
 
+
 if !nearbyNPC {
 	// Get rid of Prompt
 	scr_dismissPrompt(npcPrompt,0);
