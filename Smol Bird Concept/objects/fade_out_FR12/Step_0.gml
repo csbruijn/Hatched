@@ -14,7 +14,7 @@
 	if (image_alpha >= 1.0)
 		//if image alpha is greater than or eq to 1, transition to next fr
 		{
-			room_goto(MainRoom);
+			room_goto(fr12);
 		}
 }
 

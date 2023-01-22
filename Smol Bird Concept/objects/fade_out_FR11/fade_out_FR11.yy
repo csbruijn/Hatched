@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "fade_out_FR11",
+  "name": "Fade_out_FR11",
   "spriteId": null,
   "solid": false,
   "visible": true,

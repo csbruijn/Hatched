@@ -2,7 +2,7 @@
 {
 //changeable
 	//this is telling the fade out to wait 2 seconds before fading
-	TIME_BEFORE_fade = room_speed * 1.25;
+	TIME_BEFORE_fade = room_speed * 0.2;
 	
 	
 //no touchy!!

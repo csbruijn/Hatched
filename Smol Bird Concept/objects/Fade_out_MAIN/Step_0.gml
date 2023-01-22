@@ -1,3 +1,5 @@
+
+
 // step event is completely differenet to parent obj
 
 {
@@ -17,6 +19,13 @@
 			room_goto_next();
 		}
 }
+
+
+
+
+
+
+
 
 
 
