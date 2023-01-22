@@ -144,6 +144,7 @@
     {"id":{"name":"spr_block3","path":"sprites/spr_block3/spr_block3.yy",},"order":3,},
     {"id":{"name":"obj_fade_in","path":"objects/obj_fade_in/obj_fade_in.yy",},"order":4,},
     {"id":{"name":"obj_fade_out","path":"objects/obj_fade_out/obj_fade_out.yy",},"order":5,},
+    {"id":{"name":"scr_reddit_crafting","path":"scripts/scr_reddit_crafting/scr_reddit_crafting.yy",},"order":2,},
     {"id":{"name":"obj_mud_pool","path":"objects/obj_mud_pool/obj_mud_pool.yy",},"order":13,},
     {"id":{"name":"spr_beaver_idle","path":"sprites/spr_beaver_idle/spr_beaver_idle.yy",},"order":6,},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},"order":1,},

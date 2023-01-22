@@ -5,9 +5,6 @@
 switch tab {
 	case 0: 
 	
-
-	
-	
 	case 1:
 	selected_item = -1;
 	for (var i = 0; i < array_length(inv); i++) {

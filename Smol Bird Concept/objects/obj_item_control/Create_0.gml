@@ -38,18 +38,38 @@ global.item_list = {
 		}
 		
 	),
-	
-	shack : new create_item(
-		"shack",
-		"it's a shitty twig shack. No. It is MY shitty twig shack.", 
-		spr_item_shack,
-		spr_nest,
+	grass : new create_item(
+		"grass",
+		"The same kind of grass your mother uses, the very best!", 
+		spr_item_grass,
+		spr_item_grass,
 		
 			// whatever the item does
 		function () { 
-			instance_create_depth(obj_player.x,obj_player.y, 0, obj_shitty_twig_shack)
 			// get rid of item
 			array_delete(inv, selected_item, 1);
+			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
+			with (obj_item_overworld){
+				item = global.item_list.grass;
+			}
+			show_debug_message("grass dropped");
+		}
+	),
+	
+	mud : new create_item(
+		"clump of mud",
+		"Barnold said that it was a great building material but it seems to be the smelliest thing in the world", 
+		spr_item_mud,
+		spr_item_mud,
+		
+			// whatever the item does
+		function () { 
+			// get rid of item
+			array_delete(inv, selected_item, 1);
+			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
+			with (obj_item_overworld){
+				item = global.item_list.mud;
+			}
 			show_debug_message("shack placed");
 		}
 	),
