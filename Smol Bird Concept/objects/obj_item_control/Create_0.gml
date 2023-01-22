@@ -33,6 +33,7 @@ global.item_list = {
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
 				item = global.item_list.twig;
+				global.twigAmount -= 1;
 			}
 			show_debug_message("twig dropped");
 		}
@@ -51,6 +52,7 @@ global.item_list = {
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
 				item = global.item_list.grass;
+				global.grassAmount-= 1; 
 			}
 			show_debug_message("grass dropped");
 		}
@@ -69,6 +71,7 @@ global.item_list = {
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
 				item = global.item_list.mud;
+				global.mudAmount -=1; 
 			}
 			show_debug_message("shack placed");
 		}
