@@ -42,7 +42,7 @@ if instance_exists(obj_inventory_main){
 			if ((mouse_y > camera_get_view_y(view_camera[0]) + 228) && (mouse_y < camera_get_view_y(view_camera[0]) +300)) {
 				codex_info(spr_mom_icon, spr_feather_mom_collected,global.momFeather,global.momFeather,
 				"Mom",
-				"i luv mommy",
+				"The first person you ever saw in your life. Loves you unconditionally.",
 				" ." )
 			}
 	
@@ -52,7 +52,8 @@ if instance_exists(obj_inventory_main){
 				global.frogFeather,
 				global.hasMetFrog,
 				"Renee the Frog",
-				"Renee the frog is a calm and collected australian bullfrog ","text to addon"
+				"Renee the Frog is a calm and collected Australian Bullfrog. Loves eating flies but doesn't like the green ones.",
+				"Renee the Frog is a calm and collected Australian Bullfrog. Loves eating flies but doesn't like the green ones. Now that you helped him, his croaks of joy will echo throughout eternity."
 				);
 			}
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 450) && (mouse_y < camera_get_view_y(view_camera[0]) +510)) {	
@@ -61,8 +62,8 @@ if instance_exists(obj_inventory_main){
 				global.badgerFeather,
 				global.hasMetBadger,
 				"Roger the Badger",
-				"Roger seems like a helpful critter! ",
-				"Roger is plain landlord schum tbh blegh"
+				"Roger the Badger is a badger. When it comes to confrontation, he is also a dodger.",
+				"Roger the Badger is a badger. When it comes to confrontation, he is also a dodger."
 				);
 			}	
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 550) && (mouse_y < camera_get_view_y(view_camera[0]) +610)) {	
@@ -71,8 +72,8 @@ if instance_exists(obj_inventory_main){
 				global.beaverFeather,
 				global.hasMetBeaver,
 				"Barnold the Beaver",
-				"Barnold is a rudie that doesnt have time for me REEE! " ,
-				"Poor Barnold the Beaver is always busy with building houses"
+				"Barnold is a an eager Beaver who is always busy building dams and houses." ,
+				"Barnold is a an eager Beaver who is always busy building dams and houses. Now that you've helped him, you could say that he does give a dam!"
 				);
 			}
 	}	

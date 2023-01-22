@@ -22,7 +22,7 @@ global.item_list = {
 	
 	twig : new create_item( 
 		"Twig", 
-		"It's a twig found on the floor. Great for construction!",
+		"It's a twig you found on the ground. Great for construction!",
 		spr_item_twig,
 		spr_twig,
 	
@@ -39,7 +39,7 @@ global.item_list = {
 		
 	),
 	grass : new create_item(
-		"grass",
+		"Grass",
 		"The same kind of grass your mother uses, the very best!", 
 		spr_item_grass,
 		spr_item_grass,
@@ -57,8 +57,8 @@ global.item_list = {
 	),
 	
 	mud : new create_item(
-		"clump of mud",
-		"Barnold said that it was a great building material but it seems to be the smelliest thing in the world", 
+		"Clump of Mud",
+		"Barnold said that it was a great building material but it seems to be the smelliest thing in the world.", 
 		spr_item_mud,
 		spr_item_mud,
 		
@@ -77,8 +77,8 @@ global.item_list = {
 
 global.feather_list = {
 	mom: new create_item(
-	"mom's feather",
-	"it is a beatiful feather that once belonged to your mom",
+	"Mom's Feather",
+	"A beatiful feather that once belonged to your mom.",
 	spr_feather_mom_icon,
 	spr_feather_mom,
 	function () {
@@ -87,8 +87,8 @@ global.feather_list = {
 	),
 	
 	frog: new create_item(
-	"renee's gift",
-	"A feather gifted to you by renee for your help",
+	"Renee's Gift",
+	"A feather gifted to you by Renee the Frog for your help.",
 	spr_feather_frog_icon,
 	spr_feather_frog,
 	function () {
@@ -97,8 +97,8 @@ global.feather_list = {
 	),
 	
 	beaver: new create_item(
-	"barnold's gift",
-	"A feather gifted to you by barnold for your help",
+	"Barnold's Gift",
+	"A feather gifted to you by Barnold Beaver for your help.",
 	spr_feather_beaver_icon,
 	spr_feather_beaver,
 	function () {
@@ -107,8 +107,8 @@ global.feather_list = {
 	),
 	
 	badger: new create_item(
-	"badger's gift",
-	"A feather gifted to you by badger for your help",
+	"Roger's Gift",
+	"A feather gifted to you by Roger the Badger for your help.",
 	spr_feather_badger_icon,
 	spr_feather_badger,
 	function () {
