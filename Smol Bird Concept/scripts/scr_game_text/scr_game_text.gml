@@ -82,9 +82,6 @@ switch(_text_id)
 		global.reneejump = true;
 		break;
 		
-		case "frog - final":
-		scr_text("Go find the beaver, mate.", "renee", -1);
-		break;
 		
 		//-----------------------------------BEAVER-----------------------------------//
 		

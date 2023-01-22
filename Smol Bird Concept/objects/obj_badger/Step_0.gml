@@ -11,6 +11,7 @@ if nearbyPC
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox))
 	{ 
+			sprite_index = spr_badger_still;
 			// take control away from player
 			global.playerControl = false; 
 			//Create
@@ -25,6 +26,7 @@ if nearbyPC
 
 if (!instance_exists(obj_textbox))
 			{
+				sprite_index = spr_badger_idle;
 				global.playerControl = true;
 			}
 
