@@ -7,6 +7,7 @@ enum playerState {
 	walking,
 	pickingUp,
 	whistle,
+	SitDown,
 }
 
 
@@ -25,3 +26,6 @@ global.targetRoom = -1;
 global.targetX= -1;
 global.targetY= -1;
 global.targetDirection= 0;
+global.mudAmount = 0;
+global.grassAmount = 0;
+global.twigAmount = 0;
