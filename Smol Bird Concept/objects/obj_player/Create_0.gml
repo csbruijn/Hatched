@@ -39,6 +39,12 @@ playerSpr[playerState.whistle] [2] = spr_player_whistle;
 playerSpr[playerState.whistle] [3] = spr_player_whistle;
 
 
+/*player sit down 
+playerSpr[playerState.SitDown] [0] = spr_birdsitdown ;
+playerSpr[playerState.SitDown] [1] = spr_birdsitdown ;
+playerSpr[playerState.SitDown] [2] = spr_birdsitdown ;
+playerSpr[playerState.SitDown] [3] = spr_birdsitdown ;
+*/
 // Depth sorting
 depth = -y;
 
