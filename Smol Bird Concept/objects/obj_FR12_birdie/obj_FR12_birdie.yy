@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_FR12_birdie",
   "spriteId": {
-    "name": "spr_FR12birdie",
-    "path": "sprites/spr_FR12birdie/spr_FR12birdie.yy",
+    "name": "spr_FR12birdie_1",
+    "path": "sprites/spr_FR12birdie_1/spr_FR12birdie_1.yy",
   },
   "solid": false,
   "visible": true,

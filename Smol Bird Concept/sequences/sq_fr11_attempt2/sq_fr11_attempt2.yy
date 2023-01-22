@@ -111,7 +111,7 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "INTRO",
-    "path": "folders/Sequences/INTRO.yy",
+    "name": "Sequences",
+    "path": "folders/Sequences.yy",
   },
 }

@@ -1,4 +1,4 @@
-accept_key = keyboard_check_pressed(ord("F"));
+accept_key = keyboard_check_pressed(vk_space);
 textbox_x = camera_get_view_x(noone);
 textbox_y = camera_get_view_y(noone) + 795 + 20;
 

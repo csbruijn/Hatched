@@ -1,3 +1,9 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
+
+
 /// @description 
 
 // step event is completely differenet to parent obj
@@ -19,3 +25,9 @@
 			room_goto_next();
 		}
 }
+
+
+
+
+
+
