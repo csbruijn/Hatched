@@ -14,6 +14,9 @@ if keyboard_check_pressed(ord("F")) {
 			if feather = global.feather_list.beaver {
 				global.beaverFeather = true;
 			}
+			if feather = global.feather_list.mom {
+				global.momFeather = true;
+			}
 			instance_destroy();
 		}
 	}

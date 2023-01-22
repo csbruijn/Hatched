@@ -18,5 +18,5 @@ global.heardOfBeaver = false
 global.frogFeather = false;
 global.badgerFeather = false;
 global.beaverFeather = false;
-
+global.momFeather = false;
 
