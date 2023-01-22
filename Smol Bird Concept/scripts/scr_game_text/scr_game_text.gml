@@ -82,16 +82,20 @@ switch(_text_id)
 		global.reneejump = true;
 		break;
 		
+		case "frog - final":
+		scr_text("Go find the beaver, mate.", "renee", -1);
+		break;
+		
 		//-----------------------------------BEAVER-----------------------------------//
 		
 		case "beaver":
-		scr_text("Ayo.", "barnold", 1);
+		scr_text("Ayo.", "barnold", -1);
 		break;
 		
 		//-----------------------------------BADGER-----------------------------------//
 		
 		case "badger":
-		scr_text("Ayo..", "roger", 1);
+		scr_text("Ayo..", "roger", -1);
 		break;
 	}
 }

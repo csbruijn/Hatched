@@ -22,7 +22,7 @@ x+lookRange, y+lookRange,obj_player,false,true);
 // if the PC is nearby
 if nearbyPC { 
 	
-	}
+	
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox)) { 
 		if !global.hasMetFrog {
@@ -49,6 +49,7 @@ if nearbyPC {
 		}
 	}
 }
+}
 
 if (!instance_exists(obj_textbox))
 			{
@@ -58,6 +59,7 @@ if (!instance_exists(obj_textbox))
 //make Renee jump after textbox			
 if (global.reneejump == true && !instance_exists(obj_textbox))
 {
+	
 	global.heardOfBeaver = true; 
 	global.playerControl = false; 
 	image_index = 0;
