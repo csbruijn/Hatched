@@ -3,7 +3,7 @@
 
 nearbyMaterial = collision_rectangle(x+100, y+100, x-100,y-100, obj_item_overworld,0,1 ) ;
 
-if nearbyMaterial {
+if nearbyMaterial && isPlaced {
 	if ((twigsAdded < requiredTwigs) && (obj_item_overworld.item = global.item_list.twig)) {
 		twigsAdded += 1; 
 		instance_destroy(nearbyMaterial);
