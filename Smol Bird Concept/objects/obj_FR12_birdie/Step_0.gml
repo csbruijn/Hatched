@@ -9,9 +9,3 @@ if (image_speed > 0)
 
 
 
-
-
-
-
-
-

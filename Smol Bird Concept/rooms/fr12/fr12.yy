@@ -17,7 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"FADE","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EBA926C","properties":[],"isDnd":false,"objectId":{"name":"fade_out_FR12","path":"objects/fade_out_FR12/fade_out_FR12.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":15.0,"scaleY":7.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":-160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48B0B402","properties":[],"isDnd":false,"objectId":{"name":"fade_outFR12","path":"objects/fade_outFR12/fade_outFR12.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":9.0,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":-128.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"frame","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_10F5EBC7","properties":[],"isDnd":false,"objectId":{"name":"obj_FR12Frame","path":"objects/obj_FR12Frame/obj_FR12Frame.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":true,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
@@ -31,9 +31,9 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_5EBA926C","path":"rooms/fr12/fr12.yy",},
     {"name":"inst_754ECCAC","path":"rooms/fr12/fr12.yy",},
     {"name":"inst_10F5EBC7","path":"rooms/fr12/fr12.yy",},
+    {"name":"inst_48B0B402","path":"rooms/fr12/fr12.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
