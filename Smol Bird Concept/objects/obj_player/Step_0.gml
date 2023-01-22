@@ -57,24 +57,25 @@ if (myState == playerState.whistle) {
 
 }
 
-//change sprite based on the diretion
-if (vy>0) {
-	dir = 0;
-}
+ { //change sprite based on the diretion
+	if (vy>0) {
+		dir = 0;
+	}
 
-if (vy<0) {
-	dir = 1;
-}
+	if (vy<0) {
+		dir = 1;
+	}
 	
-if (vx<0) {
-	dir = 2;
+	if (vx<0) {
+		dir = 2;
+	}
+
+	if (vx>0) {
+		dir = 3;
+	}
 }
 
-if (vx>0) {
-	dir = 3;
-}
-
-// Check for collision with NPCs
+// Check for collision with NPCs and items
 nearbyNPC = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_par_npc,false,true);
 

@@ -78,7 +78,7 @@ if instance_exists(obj_inventory_main){
 			}
 	}	
 	
-	
+	}
 	// draw items and text
 	if (tab =1) { // why does switch statement make feathertab always appear
 		for (var i = 0; i < array_length(inv); i++) {
@@ -139,4 +139,4 @@ if instance_exists(obj_inventory_main){
 		}
 	}
 }
-}
+
