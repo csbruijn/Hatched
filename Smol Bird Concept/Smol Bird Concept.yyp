@@ -290,6 +290,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"blocks","folderPath":"folders/Objects/blocks.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"environment","folderPath":"folders/Objects/environment.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FADE","folderPath":"folders/Objects/FADE.yy","order":14,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"INTRO","folderPath":"folders/Objects/INTRO.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FADE","folderPath":"folders/Objects/INTRO/FADE.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"objects for intro","folderPath":"folders/Objects/INTRO/objects for intro.yy","order":2,},
@@ -315,6 +316,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"background","folderPath":"folders/Sprites/background.yy","order":13,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"backgrounds","folderPath":"folders/Sprites/backgrounds.yy","order":16,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"blocks","folderPath":"folders/Sprites/blocks.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"environment","folderPath":"folders/Sprites/environment.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"INTRO","folderPath":"folders/Sprites/INTRO.yy","order":11,},
@@ -330,8 +332,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"feathers","folderPath":"folders/Sprites/UI/inventory/feathers.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":7,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"backgrounds","folderPath":"folders/Sprites/backgrounds.yy","order":16,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"FADE","folderPath":"folders/Objects/FADE.yy","order":14,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
@@ -351,6 +351,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"birdTileI","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.9.1.51",
+    "IDEVersion": "2022.11.1.56",
   },
 }
