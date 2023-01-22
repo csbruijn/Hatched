@@ -21,12 +21,12 @@ x+lookRange, y+lookRange,obj_player,false,true);
 
 // if the PC is nearby
 if nearbyPC { 
-	if !global.hasMetFrog {
-		global.hasMetFrog =true;
+	
 	}
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox)) { 
-		
+		if !global.hasMetFrog {
+		global.hasMetFrog =true;
 		if (flyBuffet == false) {
 			
 			// take control away from player
