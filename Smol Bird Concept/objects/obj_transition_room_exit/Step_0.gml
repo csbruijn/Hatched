@@ -14,7 +14,10 @@ if (instance_exists(obj_player)) && (position_meeting(obj_player.x, obj_player.y
 		audio_pause_sound(snd_flies_D);
 	}
 	instance_destroy(obj_inventory_main);
-    room_goto(targetRoom);
+   if !playermoving{
+   room_goto(targetRoom);
+   playermoving =true;
+   }
 }
 
 

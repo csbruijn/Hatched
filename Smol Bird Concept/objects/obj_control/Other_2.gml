@@ -20,3 +20,8 @@ global.badgerFeather = false;
 global.beaverFeather = false;
 global.momFeather = false;
 
+
+global.targetRoom = -1;
+global.targetX= -1;
+global.targetY= -1;
+global.targetDirection= 0;
