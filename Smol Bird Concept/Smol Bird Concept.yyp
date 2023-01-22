@@ -70,6 +70,7 @@
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},"order":1,},
     {"id":{"name":"fade_outFR12","path":"objects/fade_outFR12/fade_outFR12.yy",},"order":12,},
     {"id":{"name":"spr_feather_badger_collected","path":"sprites/spr_feather_badger_collected/spr_feather_badger_collected.yy",},"order":6,},
+    {"id":{"name":"obj_long_grass","path":"objects/obj_long_grass/obj_long_grass.yy",},"order":15,},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},"order":2,},
     {"id":{"name":"fr10","path":"rooms/fr10/fr10.yy",},"order":9,},
     {"id":{"name":"obj_pond01","path":"objects/obj_pond01/obj_pond01.yy",},"order":3,},
