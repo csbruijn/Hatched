@@ -6,6 +6,7 @@ textbox_y = camera_get_view_y(noone) + 795 + 20;
 // {
 	setup = true;
 	draw_set_font(Text_bubbles);
+	draw_set_color(c_white);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 

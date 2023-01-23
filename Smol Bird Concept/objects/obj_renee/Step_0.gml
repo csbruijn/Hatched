@@ -22,12 +22,26 @@ x+lookRange, y+lookRange,obj_player,false,true);
 // if the PC is nearby
 if nearbyPC { 
 	
+	if (global.frogTalked = false && flyBuffet = false)
+	{
+		text_id = "frog";
+	}
+	
+	if (global.frogTalked = true && flyBuffet = true)
+	{
+		text_id = "frog - end";
+	}
+	
+	if (global.frogTalked = true)
+	{
+		text_id = "frog - talked";
+	}
 	
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox)) { 
 		if !global.hasMetFrog {
 		global.hasMetFrog =true;
-		if (flyBuffet == false) {
+		if (flyBuffet = false) {
 			
 			// take control away from player
 			global.playerControl = false; 
@@ -40,7 +54,6 @@ if nearbyPC {
 		}
 
 		else if  (flyBuffet == true) {
-			text_id = "frog - end";
 			// take control away from player
 			global.playerControl = false; 
 			

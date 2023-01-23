@@ -10,6 +10,7 @@ switch(_text_id)
 		scr_text("...Ribbit...g'day mate...", "renee", -1);
 			scr_option("What's your name?", "frog - name");
 			scr_option("What are you doing?", "frog - what");	
+			global.frogTalked = true;
 		break;
 		
 		case "frog - name":
@@ -73,6 +74,10 @@ switch(_text_id)
 		scr_text("Why don't search those flies yourself?", "bird");
 		scr_text("If it was that simple it would be no drama, but as soon as I jump their way they scatter and I will have nowt.", "renee", -1);
 		scr_text("I will do that for you! See you later!", "bird");
+		break;
+		
+		case "frog - talked":
+		scr_text("I am hungry...", "renee", -1)
 		break;
 		
 		case "frog - end":
