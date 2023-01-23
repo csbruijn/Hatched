@@ -104,7 +104,7 @@ if (nearbyNest) &&
 	}
 	
 		show_debug_message("constructing nest")
-		if !global.constructed {
+		if !global.constructed && obj_shitty_twig_shack.isPlaced {
 			global.playerControl = false; 
 			obj_shitty_twig_shack.alarm[0]=1;
 			x=obj_shitty_twig_shack.x; 

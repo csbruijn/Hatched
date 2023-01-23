@@ -110,6 +110,7 @@ switch(_text_id)
 		scr_text("Hi there mister I'm here to help you build some homes.", "bird");
 		scr_text("You don't seem like a builder, but alright...why don't you fetch me four twigs.", "barnold", -1);
 		global.hasMetBeaver = true;
+		global.beaverquest = true;
 		break;
 		
 		case "beaver - met badger2":
@@ -160,6 +161,9 @@ switch(_text_id)
 		global.beaverFinal = true;
 		obj_feather_overworld.x = obj_barnold.x;
 		obj_feather_overworld.y = obj_barnold.y + 100;
+		if !(instance_exists(obj_shitty_twig_shack)){
+		instance_create_depth(0,0,0,obj_shitty_twig_shack);
+		}
 		break;
 		
 		case "beaver - final":

@@ -24,6 +24,7 @@ global.beaverTwigs = false;
 global.beaverFinal = false;
 global.badgerFinal = false;
 global.frogguide = false;
+global.beaverquest = false;
 
 
 global.targetRoom = -1;

@@ -33,22 +33,22 @@ if nearbyPC
 		text_id = "beaver - met badger2"
 	}
 	
-	if (global.twigAmount < 4 && global.hasMetBeaver)
+	if (global.twigAmount < 4 && global.hasMetBeaver && global.beaverquest = true)
 	{
 		text_id = "beaver - less twigs"
 	}
 	
-	if (global.twigAmount >= 4 && global.hasMetBeaver)
+	if (global.twigAmount >= 4 && global.hasMetBeaver && global.beaverquest = true)
 	{
 		text_id = "beaver - more twigs"
 	}
 	
-	if (global.mudAmount < 2 && global.beaverTwigs = true)
+	if (global.mudAmount < 2 && global.beaverTwigs = true && global.beaverquest = true)
 	{
 		text_id = "beaver - less mud"
 	}
 	
-	if (global.mudAmount >= 2 && global.beaverTwigs = true)
+	if (global.mudAmount >= 2 && global.beaverTwigs = true && global.beaverquest = true)
 	{
 		text_id = "beaver - more mud"
 	}
