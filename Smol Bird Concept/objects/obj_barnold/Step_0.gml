@@ -58,6 +58,7 @@ if nearbyPC
 		text_id = "beaver - final"
 	}
 	
+	
 	/*if (global.playerConstructed = true)
 	{
 		text_id = "beaver - nest done"
@@ -82,7 +83,7 @@ if nearbyPC
 	}
 }
 
-if (!instance_exists(obj_textbox))
+if (!instance_exists(obj_textbox) && !instance_exists(obj_inventory_main))
 			{
 				sprite_index = spr_beaver_idle;
 				global.playerControl = true;

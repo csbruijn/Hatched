@@ -10,7 +10,7 @@ switch(_text_id)
 		scr_text("...Ribbit...g'day mate...", "renee", -1);
 			scr_option("What's your name?", "frog - name");
 			scr_option("What are you doing?", "frog - what");	
-			global.frogTalked = true;
+			global.hasMetFrog = true;
 		break;
 		
 		case "frog - name":
@@ -83,8 +83,13 @@ switch(_text_id)
 		case "frog - end":
 		scr_text("Hello there.", "bird");
 		scr_text("Good on ya birdy! Now for my end of the bargain. I might not know any way up the tree or any birds but i do know a busy little beaver and I reckon that bloke can help you out with that getting up in a tree problem since he knows all there is about trees.", "renee", -1);
-		scr_text("Thank you so much! ", "bird");
+		scr_text("Thank you so much!", "bird");
+		global.frogguide = true;
 		global.reneejump = true;
+		break;
+		
+		case "frog - guide":
+		scr_text("Go find the Beaver, birdie.", "renee", -1)
 		break;
 		
 		
@@ -150,27 +155,16 @@ switch(_text_id)
 		scr_text("Haha I like your energy. Why don't you build this one yourself?", "barnold", -1);
 		scr_text("Yes I can do the heavy work, while you teach me, sit back and relax!!!", "bird");
 		scr_text("Great idea, we have enough twigs already. If you get three bundles of grass we might have enough for a sturdy nest!", "barnold", -1);
-		scr_text("Where do you want it build?", "barnold", -1);
+		scr_text("Where do you want it build? Just bring the items to your building spot and you can build it!", "barnold", -1);
+		scr_text("Hey! I was about to forget...I found something that might be useful to you.", "barnold", -1);
 		global.beaverFinal = true;
+		obj_feather_overworld.x = obj_barnold.x;
+		obj_feather_overworld.y = obj_barnold.y + 100;
 		break;
 		
 		case "beaver - final":
 		scr_text("Just bring the items to your building spot and you can build it!", "barnold", -1);
 		break;
-		
-		case "beaver - nest done":
-		scr_text("Is it good enough?", "bird");
-		scr_text("Do you like it?", "barnold", -1);
-		scr_text("Yes.", "bird");
-		scr_text("Then yes..it is good enough!", "barnold", -1);
-		scr_text("Hey! I was about to forget...I found something that might be useful to you.", "barnold", -1);
-			instance_create_depth(x,y+100,-y,obj_feather_overworld);
-		    with (obj_feather_overworld) 
-				{
-					 feather = global.feather_list.beaver;
-				}
-		break;
-		
 		
 		//-----------------------------------BADGER-----------------------------------//
 		

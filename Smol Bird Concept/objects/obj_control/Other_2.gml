@@ -23,7 +23,7 @@ global.momFeather = false;
 global.beaverTwigs = false;
 global.beaverFinal = false;
 global.badgerFinal = false;
-global.frogTalked = false;
+global.frogguide = false;
 
 
 global.targetRoom = -1;

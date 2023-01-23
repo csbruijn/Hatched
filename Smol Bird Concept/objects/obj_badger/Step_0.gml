@@ -45,7 +45,7 @@ if nearbyPC
 	
 }
 
-if (!instance_exists(obj_textbox))
+if (!instance_exists(obj_textbox) && !instance_exists(obj_inventory_main))
 			{
 				sprite_index = spr_badger_idle;
 				global.playerControl = true;

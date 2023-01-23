@@ -1,0 +1,1 @@
+feather = global.feather_list.beaver;
