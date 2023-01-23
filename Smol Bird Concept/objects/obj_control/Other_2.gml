@@ -20,6 +20,9 @@ global.frogFeather = false;
 global.badgerFeather = false;
 global.beaverFeather = false;
 global.momFeather = false;
+global.beaverTwigs = false;
+global.beaverFinal = false;
+global.badgerFinal = false;
 
 
 global.targetRoom = -1;

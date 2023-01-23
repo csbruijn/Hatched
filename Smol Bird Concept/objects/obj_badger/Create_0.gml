@@ -10,6 +10,5 @@
 }*/
 
 // variables 
-text_id = "badger";
 nearbyPC = noone; 
 lookRange = 180; 

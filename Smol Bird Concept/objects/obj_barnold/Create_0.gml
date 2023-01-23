@@ -10,6 +10,5 @@
 }*/
 
 // variables 
-text_id = "beaver";
 nearbyPC = noone; 
 lookRange = 180; 

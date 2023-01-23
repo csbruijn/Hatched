@@ -7,6 +7,63 @@ x+lookRange, y+lookRange,obj_player,false,true);
 
 if nearbyPC
 { 
+	//Branches
+	if (global.hasMetBeaver = false && global.hasMetBadger = false)
+	{
+		text_id = "beaver";
+	}
+	
+	if (global.hasMetBeaver = true && global.hasMetBadger = true)
+	{
+		text_id = "beaver - met badger";
+	}
+	
+	if (global.hasMetBadger = false && global.hasMetBeaver = true)
+	{
+		text_id = "beaver - not met badger"
+	}
+	
+	if (global.hasMetBadger = true && global.hasMetBeaver = false)
+	{
+		text_id = "beaver - met badger"
+	}
+	
+	if (global.hasMetBadger = true && global.hasMetBeaver = true)
+	{
+		text_id = "beaver - met badger2"
+	}
+	
+	if (global.twigAmount < 4 && global.hasMetBeaver)
+	{
+		text_id = "beaver - less twigs"
+	}
+	
+	if (global.twigAmount >= 4 && global.hasMetBeaver)
+	{
+		text_id = "beaver - more twigs"
+	}
+	
+	if (global.mudAmount < 2 && global.beaverTwigs = true)
+	{
+		text_id = "beaver - less mud"
+	}
+	
+	if (global.mudAmount >= 2 && global.beaverTwigs = true)
+	{
+		text_id = "beaver - more mud"
+	}
+	
+	if (global.beaverFinal = true)
+	{
+		text_id = "beaver - final"
+	}
+	
+	/*if (global.playerConstructed = true)
+	{
+		text_id = "beaver - nest done"
+	}
+	*/
+	
 	
 	// press F or Enter to open dialogue
 	if ((keyboard_check_pressed((ord("F"))) || keyboard_check_pressed(vk_enter)) && !instance_exists(obj_textbox))
