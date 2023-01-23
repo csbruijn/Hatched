@@ -25,6 +25,7 @@ function scr_dismissPrompt(_whichPrompt,_toReset) {
 						// Reset npcPrompt
 						case 0: npcPrompt = noone; break;
 						case 1: itemPrompt = noone; break; 
+						case 2: nestPrompt = noone; break; 
 					}
 				}
 			}

@@ -29,3 +29,4 @@ global.targetDirection= 0;
 global.mudAmount = 0;
 global.grassAmount = 0;
 global.twigAmount = 0;
+global.constructed = false; 

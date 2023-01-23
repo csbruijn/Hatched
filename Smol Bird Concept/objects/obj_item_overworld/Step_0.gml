@@ -11,10 +11,17 @@ if keyboard_check_pressed(ord("F")) {
 	if (global.inventorySpace < 15) {
 		if place_meeting(x,y,obj_player) {
 			item_add (item) ;
-			instance_destroy();
 			if item = global.item_list.twig {
 				global.twigAmount+=1;
-				}
+			}
+			if item = global.item_list.grass {
+				global.grassAmount+=1;
+			}
+			if item = global.item_list.mud {
+				global.mudAmount+=1;
+			}
+			instance_destroy();
+			
 		}
 	}
 }

@@ -33,8 +33,9 @@ global.item_list = {
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
 				item = global.item_list.twig;
-				global.twigAmount -= 1;
+				
 			}
+			global.twigAmount -= 1;
 			show_debug_message("twig dropped");
 		}
 		
@@ -43,7 +44,7 @@ global.item_list = {
 		"Grass",
 		"The same kind of grass your mother uses, the very best!", 
 		spr_item_grass,
-		spr_item_grass,
+		spr_grass,
 		
 			// whatever the item does
 		function () { 
@@ -52,8 +53,9 @@ global.item_list = {
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
 				item = global.item_list.grass;
-				global.grassAmount-= 1; 
+				 
 			}
+			global.grassAmount-= 1;
 			show_debug_message("grass dropped");
 		}
 	),
@@ -62,7 +64,7 @@ global.item_list = {
 		"Clump of Mud",
 		"Barnold said that it was a great building material but it seems to be the smelliest thing in the world.", 
 		spr_item_mud,
-		spr_item_mud,
+		spr_mud,
 		
 			// whatever the item does
 		function () { 
@@ -71,8 +73,9 @@ global.item_list = {
 			instance_create_depth(obj_player.x,obj_player.y,0,obj_item_overworld)
 			with (obj_item_overworld){
 				item = global.item_list.mud;
-				global.mudAmount -=1; 
+				 
 			}
+			global.mudAmount -=1;
 			show_debug_message("shack placed");
 		}
 	),

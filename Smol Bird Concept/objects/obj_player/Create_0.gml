@@ -12,7 +12,11 @@ nearbyNPC = noone;
 lookRange = 160;
 npcPrompt = noone;
 itemPrompt = noone;
+nestPrompt = noone; 
 myState = playerState.idle;
+requiredTwigs =4;
+requiredGrass =3 ;
+requiredMud = 2;
 
 // spawn player at target
 if (global.targetX != -1 ) {
@@ -37,6 +41,12 @@ playerSpr[playerState.whistle] [0] = spr_player_whistle;
 playerSpr[playerState.whistle] [1] = spr_player_whistle;
 playerSpr[playerState.whistle] [2] = spr_player_whistle;
 playerSpr[playerState.whistle] [3] = spr_player_whistle;
+
+//player sit down 
+playerSpr[playerState.SitDown] [0] = spr_birdsitdown ;
+playerSpr[playerState.SitDown] [1] = spr_birdsitdown ;
+playerSpr[playerState.SitDown] [2] = spr_birdsitdown ;
+playerSpr[playerState.SitDown] [3] = spr_birdsitdown ;
 
 
 /*player sit down 

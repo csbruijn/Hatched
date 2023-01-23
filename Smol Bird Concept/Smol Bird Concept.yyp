@@ -22,6 +22,7 @@
     {"id":{"name":"spr_space_mash","path":"sprites/spr_space_mash/spr_space_mash.yy",},"order":15,},
     {"id":{"name":"spr_player_idle_right","path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},"order":1,},
     {"id":{"name":"obj_fade_in_baseclass","path":"objects/obj_fade_in_baseclass/obj_fade_in_baseclass.yy",},"order":0,},
+    {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},"order":15,},
     {"id":{"name":"spr_FR5eat","path":"sprites/spr_FR5eat/spr_FR5eat.yy",},"order":2,},
     {"id":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"order":0,},
     {"id":{"name":"fr6","path":"rooms/fr6/fr6.yy",},"order":5,},
