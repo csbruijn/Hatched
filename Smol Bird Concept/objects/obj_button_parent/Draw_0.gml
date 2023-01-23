@@ -2,6 +2,8 @@
 // You can write your code in this editor
 draw_self();	
 
+draw_set_color(#fff18f)
+
 draw_set_font(Menu_Font);
 
 draw_set_halign(fa_center);
