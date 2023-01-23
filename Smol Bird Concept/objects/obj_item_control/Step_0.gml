@@ -1,6 +1,6 @@
 // https://www.youtube.com/watch?v=fa26B54JDDk
 
-
+if instance_exists(obj_inventory_main){
 // switch tabs 
 switch tab {
 	case 0: 
@@ -45,5 +45,5 @@ switch tab {
 	}
 	case 3:
 }
-
+}
 global.inventorySpace = array_length(inv);

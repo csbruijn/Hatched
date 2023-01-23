@@ -2,7 +2,7 @@
 if (!global.pause)
 {
 	// check keys for movement
-	if ((global.playerControl == true)&& myState != playerState.whistle)
+	if ((global.playerControl == true)&& (myState != playerState.whistle) && (myState!=playerState.SitDown))
 	{
 		moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 		moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
@@ -26,13 +26,13 @@ if (!global.pause)
 	//if idle
 	if (vx == 0 && vy == 0) 
 	{
-		if myState != playerState.whistle {
+		if myState != playerState.whistle && myState !=playerState.SitDown {
 			// sprite = idle
 			myState = playerState.idle;
 		}
 	}
 	
-// if picking up an item
+// if whisteling
 if (myState == playerState.whistle) {
 	if (image_index = 9 ) { 
 		myState = playerState.idle;
@@ -82,6 +82,9 @@ x+lookRange, y+lookRange,obj_par_npc,false,true);
 nearbyItem = collision_rectangle(x-lookRange, y-lookRange,
 x+lookRange, y+lookRange,obj_par_item,false,true);
 
+nearbyNest = collision_rectangle(x-lookRange, y-lookRange,
+x+lookRange, y+lookRange,obj_shitty_twig_shack,false,true);
+
 // picking up item with space
 if nearbyItem {
 	if (itemPrompt == noone || itemPrompt == undefined) {
@@ -92,6 +95,35 @@ if !nearbyItem {
 	scr_dismissPrompt(itemPrompt,1);
 }
 
+if (nearbyNest) && 
+	(global.twigAmount >= requiredTwigs 
+	&& global.grassAmount >= requiredGrass 
+	&& global.mudAmount >= requiredMud) {
+	if (nestPrompt == noone || nestPrompt == undefined) {
+		nestPrompt = scr_showPrompt(nearbyNest,nearbyNest.x,nearbyNest.y-70);
+	}
+	
+		show_debug_message("constructing nest")
+		if !global.constructed {
+			global.playerControl = false; 
+			obj_shitty_twig_shack.alarm[0]=1;
+			x=obj_shitty_twig_shack.x; 
+			y=obj_shitty_twig_shack.y+60;
+			if !instance_exists(obj_cloud) {
+				instance_create_depth(x,y,-y-999,obj_cloud)
+			}
+			
+			
+		}
+		
+	
+		
+
+	
+}
+if !nearbyNest || myState = playerState.SitDown{ 
+	scr_dismissPrompt(nestPrompt,2);
+}
 
 
 //When nearby NPC
@@ -106,10 +138,16 @@ if (nearbyNPC && global.playerControl=true) {
 }
 
 
+
+
 if !nearbyNPC {
 	// Get rid of Prompt
 	scr_dismissPrompt(npcPrompt,0);
 }
+
+
+
+
 
 // Auto-choose Sprite based on state and direction
 sprite_index = playerSpr[myState][dir];
