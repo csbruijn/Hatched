@@ -11,8 +11,6 @@ if instance_exists(obj_inventory_main){
 		draw_set_halign(fa_middle);
 		draw_set_color(c_white);
 		
-		
-		
 	{	// draw NPC names
 		draw_text(430, 247, "Mom");
 				
@@ -43,7 +41,7 @@ if instance_exists(obj_inventory_main){
 				codex_info(spr_mom_icon, spr_feather_mom_collected,global.momFeather,global.momFeather,
 				"Mom",
 				"The first person you ever saw in your life. Loves you unconditionally.",
-				" ." )
+				" " )
 			}
 	
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 345) && (mouse_y < camera_get_view_y(view_camera[0]) +400)) {
@@ -53,7 +51,7 @@ if instance_exists(obj_inventory_main){
 				global.hasMetFrog,
 				"Renee the Frog",
 				"Renee the Frog is a calm and collected Australian Bullfrog. Loves eating flies but doesn't like the green ones.",
-				"Renee the Frog is a calm and collected Australian Bullfrog. Loves eating flies but doesn't like the green ones. Now that you helped him, his croaks of joy will echo throughout eternity."
+				"Now that you helped him, his croaks of joy will echo throughout eternity."
 				);
 			}
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 450) && (mouse_y < camera_get_view_y(view_camera[0]) +510)) {	
@@ -63,7 +61,7 @@ if instance_exists(obj_inventory_main){
 				global.hasMetBadger,
 				"Roger the Badger",
 				"Roger the Badger is a badger. When it comes to confrontation, he is also a dodger.",
-				"Roger the Badger is a badger. When it comes to confrontation, he is also a dodger."
+				""
 				);
 			}	
 		if ((mouse_y > camera_get_view_y(view_camera[0]) + 550) && (mouse_y < camera_get_view_y(view_camera[0]) +610)) {	
@@ -73,16 +71,14 @@ if instance_exists(obj_inventory_main){
 				global.hasMetBeaver,
 				"Barnold the Beaver",
 				"Barnold is a an eager Beaver who is always busy building dams and houses." ,
-				"Barnold is a an eager Beaver who is always busy building dams and houses. Now that you've helped him, you could say that he does give a dam!"
+				"Now that you've helped him, you could say that he does give a dam!"
 				);
 			}
-	}	
-	
+		}	
 	}
 	// draw items and text
 	if (tab =1) { // why does switch statement make feathertab always appear
-		for (var i = 0; i < array_length(inv); i++) {
-		
+		for (var i = 0; i < array_length(inv); i++) {		
 			var _sepX = sep + 100 ; 
 			var _sepY = sep + 100 - 6;
 			var _xx = Xbegin + (i mod rowLength)*_sepX;
@@ -90,7 +86,6 @@ if instance_exists(obj_inventory_main){
 			var _col = c_white;
 	
 			//icon
-		
 			draw_sprite(inv[i].icon, 0, _xx , _yy);
 	
 			// get colour
@@ -110,20 +105,15 @@ if instance_exists(obj_inventory_main){
 
 	if (tab =2) { 
 		for (var i = 0; i < array_length(feathers); i++) {
-		
 			var _sepX = sep + 100 ; 
 			var _sepY = sep + 100 - 6;
 			var _xx = Xbegin + (i mod rowLength)*_sepX;
 			var _yy = Ybegin + (i div rowLength)*_sepY;
 			var _col = c_white;
 	
-			//icon
-		
+			//icoN
 			draw_sprite(feathers[i].icon, 0, _xx , _yy);
 		
-	
-		
-	
 			// get colour
 			draw_set_color(_col);
 	
